@@ -6,10 +6,10 @@ import { motionShake } from "~/components/ui/motions/motionShake";
 
 <template>
   <div
-    class="relative mx-auto w-full rounded-3xl border border-dark-text-secondary px-4 py-6 lg:fixed lg:left-10 lg:top-1/2 lg:max-w-sm lg:-translate-y-1/2 lg:px-8 lg:py-10 dark:border-light-text-secondary"
+    class="relative mx-auto w-full rounded-3xl border border-tertiary px-4 py-6 lg:fixed lg:left-8 lg:top-1/2 lg:max-w-sm lg:-translate-y-1/2 lg:px-8 lg:py-10"
   >
     <div class="mb-8 flex items-center justify-between">
-      <h1 class="flex items-center gap-1 text-2xl font-bold">R. B. Johan</h1>
+      <h1 class="flex items-center gap-1 text-2xl font-bold">Johan</h1>
       <p class="text-xl">Developer.</p>
     </div>
 
@@ -17,30 +17,30 @@ import { motionShake } from "~/components/ui/motions/motionShake";
       <img
         src="~/assets/pngs/avatar.png"
         alt="Profile"
-        class="h-[200px] w-[200px] rounded-full border-4 border-dark-text-secondary dark:border-light-text-secondary"
+        class="h-[200px] w-[200px] rounded-full border-4 border-tertiary"
       />
     </div>
 
     <div class="flex flex-col gap-3 text-center">
       <a :href="`mailto:${Contact.Email}`" class="text-lg font-semibold">{{ Contact.Email }}</a>
-      <p class="text-gray-400">Based in Annecy, France 🇫🇷</p>
+      <p class="text-tertiary">Based in Annecy, France 🇫🇷</p>
     </div>
 
     <div class="my-6 flex justify-center gap-4">
       <a
         :href="Contact.GitHub"
         target="_blank"
-        class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-dark-text-secondary"
+        class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-tertiary"
       >
-        <Icon name="mdi:github" class="h-6 w-6 text-gray-400 transition-all duration-150 hover:text-white" />
+        <Icon name="mdi:github" class="h-6 w-6 text-tertiary transition-all duration-150 hover:text-white" />
       </a>
 
       <a
         :href="Contact.LinkedIn"
         target="_blank"
-        class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-dark-text-secondary"
+        class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-tertiary"
       >
-        <Icon name="mdi:linkedin" class="h-6 w-6 text-gray-400 transition-all duration-150 hover:text-white" />
+        <Icon name="mdi:linkedin" class="h-6 w-6 text-tertiary transition-all duration-150 hover:text-white" />
       </a>
     </div>
 

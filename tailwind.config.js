@@ -12,17 +12,16 @@ export default {
       colors: {
         primary: "#28e98c",
         secondary: "#000000",
+        tertiary: "#575757",
 
         dark: {
           bg: "#202020",
           text: "#ffffff",
-          "text-secondary": "#999999",
         },
 
         light: {
           bg: "#ffffff",
           text: "#202020",
-          "text-secondary": "#575757",
         },
       },
     },
