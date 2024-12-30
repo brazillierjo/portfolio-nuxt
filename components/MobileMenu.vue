@@ -17,7 +17,7 @@ const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
     >
       <Icon
         :name="isMenuOpen ? 'mdi:close' : 'mdi:menu'"
-        class="text-tertiary transition-all duration-300 hover:text-primary"
+        class="text-white transition-all duration-300 hover:text-primary"
         size="24"
       />
     </button>
