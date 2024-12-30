@@ -1,10 +1,10 @@
 <template>
   <NuxtRouteAnnouncer />
 
-  <Body class="bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text">
-  <NuxtLayout>
-    <NuxtLoadingIndicator />
-    <NuxtPage />
-  </NuxtLayout>
+  <Body class="bg-light-bg p-4 text-light-text lg:p-8 dark:bg-dark-bg dark:text-dark-text">
+    <NuxtLayout>
+      <NuxtLoadingIndicator />
+      <NuxtPage />
+    </NuxtLayout>
   </Body>
 </template>

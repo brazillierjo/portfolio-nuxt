@@ -1,27 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    './components/**/*.{js,vue,ts}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
-    './plugins/**/*.{js,ts}',
-    './app.vue',
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#28e98c',
+        primary: "#28e98c",
+        secondary: "#000000",
 
         dark: {
-          bg: '#202020',
-          text: '#ffffff',
-          'text-secondary': '#999999',
+          bg: "#202020",
+          text: "#ffffff",
+          "text-secondary": "#999999",
         },
 
         light: {
-          bg: '#ffffff',
-          text: '#202020',
-          'text-secondary': '#575757',
+          bg: "#ffffff",
+          text: "#202020",
+          "text-secondary": "#575757",
         },
       },
     },
