@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxt/icon": "1.10.3",
+    "@vueuse/motion": "^2.2.6",
     "nuxt": "^3.15.0",
     "vue": "latest",
     "vue-router": "latest"

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Button from "~/components/ui/Button.vue";
 import { Contact } from "~/types/enums/Contact";
+import { motionShake } from "~/components/ui/motions/motionShake";
 </script>
 
 <template>
@@ -9,7 +10,6 @@ import { Contact } from "~/types/enums/Contact";
   >
     <div class="mb-8 flex items-center justify-between">
       <h1 class="flex items-center gap-1 text-2xl font-bold">R. B. Johan</h1>
-
       <p class="text-xl">Developer.</p>
     </div>
 
@@ -45,7 +45,7 @@ import { Contact } from "~/types/enums/Contact";
     </div>
 
     <a :href="`mailto:${Contact.Email}`">
-      <Button type="button" classes="w-full md:w-fit md:mx-auto md:min-w-[200px]">
+      <Button type="button" classes="w-full md:w-fit md:mx-auto md:min-w-[200px]" v-motion="motionShake">
         <span class="flex items-center gap-2">
           <Icon name="mdi:email-outline" class="h-5 w-5" />
 
