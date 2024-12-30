@@ -1,4 +1,8 @@
 <template>
-  <ProfileCard />
+  <!-- Menus -->
   <DesktopMenu />
+  <MobileMenu />
+
+  <!-- Components -->
+  <ProfileCard />
 </template>

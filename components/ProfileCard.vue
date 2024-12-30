@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import Button from "~/components/ui/Button.vue";
-import { Contact } from "~/types/enums/Contact";
+import { Contact } from "~/utils/enums/Contact";
 import { motionShake } from "~/components/ui/motions/motionShake";
 </script>
 
 <template>
   <div
-    class="relative mx-auto w-full rounded-3xl border border-tertiary px-4 py-6 lg:fixed lg:left-8 lg:top-1/2 lg:max-w-sm lg:-translate-y-1/2 lg:px-8 lg:py-10"
+    class="relative mx-auto w-full rounded-3xl border border-tertiary px-4 py-6 lg:fixed lg:left-8 lg:top-1/2 lg:max-w-[300px] lg:-translate-y-1/2 lg:px-8 lg:py-10"
   >
     <div class="mb-8 flex items-center justify-between">
       <h1 class="flex items-center gap-1 text-2xl font-bold">Johan</h1>

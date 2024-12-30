@@ -1,16 +1,12 @@
 <script lang="ts">
 import { defineComponent } from "vue";
+import { links } from "~/utils/links";
 
 export default defineComponent({
   name: "VerticalMenu",
   data() {
     return {
-      links: [
-        { name: "Introduce", icon: "mdi:home" },
-        { name: "About", icon: "mdi:account" },
-        { name: "Experience", icon: "mdi:briefcase" },
-        { name: "Education", icon: "mdi:school" },
-      ],
+      links: links,
     };
   },
 });
@@ -25,7 +21,7 @@ export default defineComponent({
         <a :href="`#${link.name}`" class="p-2">
           <Icon
             :name="link.icon"
-            class="mx-auto h-5 w-5 text-tertiary transition-all duration-150 hover:text-white"
+            class="mx-auto h-5 w-5 text-icons transition-all duration-150 hover:text-primary"
             size="24"
           />
         </a>

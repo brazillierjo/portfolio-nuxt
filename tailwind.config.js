@@ -18,6 +18,7 @@ export default {
         primary: "#28e98c",
         secondary: "#000000",
         tertiary: "#575757",
+        icons: "#999",
 
         dark: {
           bg: "#202020",
