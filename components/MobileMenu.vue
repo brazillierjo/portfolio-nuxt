@@ -1,26 +1,11 @@
-<script lang="ts">
-import { defineComponent, ref } from "vue";
+<script setup lang="ts">
+import { ref } from "vue";
 import Panel from "~/components/ui/Panel.vue";
 import { links } from "~/utils/links";
 
-export default defineComponent({
-  name: "MobileMenu",
-  components: { Panel },
-  data() {
-    return {
-      links: links,
-    };
-  },
-  setup() {
-    const isMenuOpen = ref(false);
-    const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
+const isMenuOpen = ref(false);
 
-    return {
-      isMenuOpen,
-      toggleMenu,
-    };
-  },
-});
+const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
 </script>
 
 <template>
@@ -48,10 +33,9 @@ export default defineComponent({
           @click="toggleMenu"
         >
           <Icon :name="link.icon" class="h-5 w-5 text-icons transition-colors duration-150 group-hover:text-primary" />
-
-          <span class="text-sm text-tertiary transition-colors duration-150 group-hover:text-white">{{
-            link.name
-          }}</span>
+          <span class="text-sm text-tertiary transition-colors duration-150 group-hover:text-white">
+            {{ link.name }}
+          </span>
         </a>
       </nav>
     </Panel>

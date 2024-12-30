@@ -1,24 +1,16 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  name: "Panel",
-  props: {
-    isOpen: {
-      type: Boolean,
-      required: true,
-    },
-  },
-  setup(props, { emit }) {
-    const closePanel = () => {
-      emit("close");
-    };
-
-    return {
-      closePanel,
-    };
+<script setup lang="ts">
+defineProps({
+  isOpen: {
+    type: Boolean,
+    required: true,
   },
 });
+
+const emit = defineEmits(["close"]);
+
+const closePanel = () => {
+  emit("close");
+};
 </script>
 
 <template>
