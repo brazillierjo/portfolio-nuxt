@@ -11,28 +11,12 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/icon", "@vueuse/motion/nuxt"],
+  modules: ["@nuxt/icon", "@vueuse/motion/nuxt", "@nuxtjs/google-fonts"],
 
-  runtimeConfig: {
-    public: {
-      motion: {
-        directives: {
-          "slide-bottom": {
-            initial: {
-              y: 50,
-              opacity: 0,
-            },
-            visible: {
-              y: 0,
-              opacity: 1,
-              transition: {
-                duration: 0.6,
-                delay: 0.2,
-              },
-            },
-          },
-        },
-      },
+  googleFonts: {
+    families: {
+      Inter: [100, 200, 300, 400, 500, 600, 700, 800, 900],
     },
+    display: "swap",
   },
 });
