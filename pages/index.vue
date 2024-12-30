@@ -18,7 +18,10 @@ useHead({
   <DesktopMenu />
   <MobileMenu />
 
-  <!-- Components -->
+  <!-- Profile floating card -->
   <ProfileCard />
+
+  <!-- Sections -->
+
 </template>
 
