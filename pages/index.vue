@@ -1,7 +1,4 @@
 <template>
-  <!-- Menus -->
-  <DesktopMenu />
-
-  <!-- Components -->
   <ProfileCard />
+  <DesktopMenu />
 </template>
