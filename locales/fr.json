@@ -31,6 +31,54 @@
     "phrase6": "🧘‍♂️ Développeur Web depuis 2020, j'apprécie particulièrement travailler avec Nuxt & NextJs dans un environnement Agile, en suivant les principes du clean code et en intégrant des pipelines CI/CD. J'adore transformer des maquettes de tout style en sites web dynamiques et interactifs pour améliorer l'expérience utilisateur.",
     "go_to_my_experiences": "Mes expériences"
   },
+  "experiences": {
+    "title": "mes expériences",
+    "go_to_educations": "Aller aux formations",
+    "items": [
+      {
+        "company": "Winter Energies",
+        "title": "Ingénieur logiciel",
+        "years": "2024 - (en cours)",
+        "description": "En tant que développeur front-end chez Winter Energies, je crée des interfaces utilisateur modernes et performantes avec Next.js, TailwindCSS et TypeScript, contribuant à une consommation d'énergie durable grâce à des solutions évolutives et fiables."
+      },
+      {
+        "company": "La Boîte Immo",
+        "title": "Ingénieur logiciel",
+        "years": "2022 - 2024",
+        "description": "Développement d'un logiciel de gestion immobilière robuste pour simplifier les opérations et améliorer l'efficacité des agents immobiliers indépendants."
+      },
+      {
+        "company": "Free-lance",
+        "title": "Développeur freelance",
+        "years": "2022 (en cours)",
+        "description": "Fourniture de solutions sur mesure aux clients, garantissant que leurs besoins uniques sont satisfaits avec une expertise en développement de haute qualité."
+      },
+      {
+        "company": "GetUp Agency",
+        "title": "Développeur Front-End",
+        "years": "2022",
+        "description": "Création d'expériences front-end engageantes et conviviales pour les clients, les aidant à atteindre leurs objectifs de présence en ligne."
+      },
+      {
+        "company": "Vitassurance",
+        "title": "Développeur Front-end & Back-end",
+        "years": "2021",
+        "description": "Site de courtage en assurance permettant de comparer rapidement les offres de différents assureurs. Une fois le formulaire rempli par le visiteur, ses informations sont envoyées via une API à un CRM pour gérer le dossier du nouveau client."
+      },
+      {
+        "company": "poupepoupi.com",
+        "title": "Analyste Web (6 ans)",
+        "years": "2014 - 2020",
+        "description": "Fournir des analyses et des optimisations pour maximiser les performances des sites Web et stimuler la croissance de l'entreprise grâce à des stratégies basées sur les données."
+      },
+      {
+        "company": "Grandes chaînes de magasins | Jardineries | Animation",
+        "title": "Divers emplois dans différents domaines",
+        "years": "2011 - 2014",
+        "description": "Acquisition de compétences polyvalentes et d'une expérience précieuse en travaillant dans divers rôles dans plusieurs industries."
+      }
+    ]
+  },
   "contact": {
     "title1": "Travaillons",
     "title2": "ensemble",
