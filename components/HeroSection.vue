@@ -5,7 +5,7 @@ const introduceLink = links.find((link) => link.name === "Introduction");
 </script>
 
 <template>
-  <section id="Introduction" class="flex flex-col gap-6 xl:-mt-6 xl:min-h-screen xl:justify-center xl:gap-12">
+  <section id="Introduction" class="flex flex-col gap-6 xl:-mt-6 items-center xl:items-start text-center xl:text-left xl:min-h-screen xl:justify-center xl:gap-12">
     <Tag>
       <Icon :name="introduceLink?.icon ?? ''" class="h-4 w-4" />
       {{ introduceLink?.name }}
@@ -53,7 +53,7 @@ const introduceLink = links.find((link) => link.name === "Introduction");
         target="_blank"
         class="flex items-center justify-center rounded-full border p-3 transition-all bg-white duration-300 hover:scale-110 hover:border-primary"
       >
-        <img :src="stack.icon" class="h-8 w-8" />
+        <img :src="stack.icon" :alt="stack.name" class="h-8 w-8" />
         <span class="sr-only">{{ stack.name }}</span>
       </a>
     </div>
