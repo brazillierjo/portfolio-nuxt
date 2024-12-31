@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Contact } from "~/utils/enums/Contact";
 import Tag from "~/components/ui/Tag.vue";
-import {useI18n} from "vue-i18n";
+import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
 

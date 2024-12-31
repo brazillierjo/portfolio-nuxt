@@ -15,7 +15,7 @@ const isActive = (linkName: string) => route.hash === `#${linkName}`;
       class="flex w-fit min-w-[50px] flex-col items-center gap-5 rounded-full border border-tertiary bg-transparent py-6"
     >
       <div v-for="link in links" :key="link.name" class="group relative">
-        <a :href="`#${link.id}`" class="p-2 relative">
+        <a :href="`#${link.id}`" class="relative p-2">
           <!-- Icon -->
           <Icon
             :name="link.icon"
@@ -28,7 +28,7 @@ const isActive = (linkName: string) => route.hash === `#${linkName}`;
 
           <!-- Tooltip -->
           <span
-            class="absolute right-full top-1/2 -translate-y-1/2 ml-3 hidden min-w-max whitespace-nowrap rounded-lg bg-black bg-opacity-80 px-4 py-2 text-sm text-white shadow-lg group-hover:block transition-opacity duration-300 ease-out"
+            class="absolute right-full top-1/2 ml-3 hidden min-w-max -translate-y-1/2 whitespace-nowrap rounded-lg bg-black bg-opacity-80 px-4 py-2 text-sm text-white shadow-lg transition-opacity duration-300 ease-out group-hover:block"
           >
             {{ t(link.name) }}
           </span>

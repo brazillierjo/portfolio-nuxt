@@ -28,7 +28,7 @@ const introduceLink = links.find((link) => link.id === "experiences");
       href="#educations"
       class="w-fit items-center gap-2 rounded-full border-2 border-text px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:bg-text hover:text-secondary lg:flex"
     >
-      My education
+      {{ t("experiences.go_to_educations") }}
       <Icon name="mdi:arrow-down" class="h-4 w-4 animate-bounce" />
     </a>
   </section>

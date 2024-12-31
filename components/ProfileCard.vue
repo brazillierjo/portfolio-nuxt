@@ -12,7 +12,7 @@ const { t } = useI18n();
   >
     <div class="mb-8 flex items-center justify-between">
       <h1 class="flex items-center gap-1 text-2xl font-bold" v-motion-fade>Johan</h1>
-      <p class="text-xl" v-motion-fade>{{ t('profileCard.developer') }}</p>
+      <p class="text-xl" v-motion-fade>{{ t("profileCard.developer") }}</p>
     </div>
 
     <div class="mb-4 flex justify-center">
@@ -25,7 +25,7 @@ const { t } = useI18n();
 
     <div class="flex flex-col gap-3 text-center">
       <a :href="`mailto:${Contact.Email}`" class="text-lg font-semibold">{{ Contact.Email }}</a>
-      <p class="text-icons">{{ t('profileCard.based_in') }}</p>
+      <p class="text-icons">{{ t("profileCard.based_in") }}</p>
     </div>
 
     <div class="my-6 flex justify-center gap-4">
@@ -51,7 +51,7 @@ const { t } = useI18n();
         <span class="flex items-center gap-2">
           <Icon name="mdi:email-outline" class="h-5 w-5" />
 
-          {{ t('profileCard.hire_me') }}
+          {{ t("profileCard.hire_me") }}
         </span>
       </Button>
     </a>

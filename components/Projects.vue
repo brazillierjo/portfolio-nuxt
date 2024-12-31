@@ -2,7 +2,7 @@
 import { links } from "~/utils/links";
 import Tag from "~/components/ui/Tag.vue";
 import ProjectCard from "~/components/ui/ProjectCard.vue";
-import {useI18n} from "vue-i18n";
+import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
 
@@ -29,7 +29,7 @@ const introduceLink = links.find((link) => link.id === "projects");
       href="#contact"
       class="w-fit items-center gap-2 rounded-full border-2 border-text px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:bg-text hover:text-secondary lg:flex"
     >
-      Contact me
+      {{ t("projects.go_to_contact") }}
       <Icon name="mdi:arrow-down" class="h-4 w-4 animate-bounce" />
     </a>
   </section>

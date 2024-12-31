@@ -9,12 +9,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: [
-    "@nuxtjs/i18n",
-    "@nuxt/icon",
-    "@vueuse/motion/nuxt",
-    "@nuxtjs/google-fonts",
-  ],
+  modules: ["@nuxtjs/i18n", "@nuxt/icon", "@vueuse/motion/nuxt", "@nuxtjs/google-fonts"],
   i18n: {
     lazy: true,
     langDir: "../locales/",
