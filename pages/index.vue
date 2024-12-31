@@ -22,5 +22,6 @@ useHead({
     <HeroSection />
     <About />
     <Experiences />
+    <Educations />
   </main>
 </template>
