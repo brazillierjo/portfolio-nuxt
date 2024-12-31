@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import LanguageSwitcher from "~/components/LanguageSwitcher.vue";
+
 useHead({
   title: "RINCON BRAZILLIER Johan | Portfolio",
   meta: [
@@ -12,6 +14,9 @@ useHead({
 </script>
 
 <template>
+  <!-- LangueSwitcher -->
+  <LanguageSwitcher />
+
   <!-- Menus -->
   <DesktopMenu />
   <MobileMenu />
