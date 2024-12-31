@@ -21,9 +21,8 @@ const introduceLink = links.find((link) => link.name === "Introduction");
       <p>I'm Johan, a Software Engineer passionate about crafting user-friendly web apps. Check out my work below!</p>
     </div>
 
-    <div class="flex flex-col lg:flex-row items-center gap-4">
-      <a href="./CV.pdf"
-         download="CV-RINCON-BRAZILLIER-Johan.pdf">
+    <div class="flex flex-col items-center gap-4 lg:flex-row">
+      <a href="./CV.pdf" download="CV-RINCON-BRAZILLIER-Johan.pdf">
         <button
           class="flex w-fit animate-pulse items-center gap-2 rounded-full border-2 border-primary px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:bg-primary hover:text-secondary"
         >
@@ -34,7 +33,7 @@ const introduceLink = links.find((link) => link.name === "Introduction");
 
       <a
         href="#About"
-        class="w-fit items-center gap-2 rounded-full border-2 border-text px-4 py-2 text-sm uppercase text-text transition-all duration-300 lg:flex hover:bg-text hover:text-secondary"
+        class="w-fit items-center gap-2 rounded-full border-2 border-text px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:bg-text hover:text-secondary lg:flex"
       >
         About me
         <Icon name="mdi:arrow-down" class="h-4 w-4 animate-bounce" />
