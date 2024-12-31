@@ -17,11 +17,12 @@ useHead({
   <MobileMenu />
 
   <!-- Sections -->
-  <main class="flex flex-col gap-20 xl:mx-auto xl:max-w-lg 2xl:max-w-3xl">
+  <main class="flex flex-col gap-20 overflow-x-hidden xl:mx-auto xl:max-w-lg 2xl:max-w-3xl">
     <ProfileCard />
     <HeroSection />
     <About />
     <Experiences />
     <Educations />
+    <Projects />
   </main>
 </template>
