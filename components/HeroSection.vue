@@ -63,7 +63,7 @@ const introduceLink = links.find((link) => link.id === "introduction");
         :style="{ animationDelay: `${index * 0.1}s` }"
       >
         <div
-          class="stack-icon flex items-center justify-center rounded-full border bg-white p-3 transition-all duration-300 group-hover:border-primary"
+          class="stack-icon flex items-center justify-center rounded-full border-4 border-transparent bg-white p-3 transition-all duration-300 group-hover:border-primary"
         >
           <img :src="stack.icon" :alt="stack.name" class="h-8 w-8" />
         </div>
