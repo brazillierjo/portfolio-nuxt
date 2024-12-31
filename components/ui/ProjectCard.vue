@@ -8,15 +8,8 @@ defineProps({
 </script>
 
 <template>
-  <div v-motion-slide-visible-once-bottom class="grid grid-cols-2 items-center gap-8 border rounded-xl border-tertiary px-6 py-3">
-    <div class="w-fit rounded-xl">
-      <img
-        v-if="project.image.endsWith('.webp')"
-        :src="project.image"
-        :alt="project.title"
-        class="w-full object-contain rounded-xl"
-      />
-    </div>
+  <div v-motion-slide-visible-once-bottom class="border rounded-xl border-tertiary p-6">
+
 
     <div>
 
@@ -31,7 +24,7 @@ defineProps({
         </li>
       </ul>
 
-      <div class="mt-4 flex flex-col gap-4">
+      <div class="mt-4 flex items-center gap-4">
         <a
           v-if="project.appUrl !== ''"
           :href="project.appUrl"
