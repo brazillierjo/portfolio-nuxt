@@ -17,7 +17,7 @@ useHead({
   <MobileMenu />
 
   <!-- Sections -->
-  <main class="flex flex-col gap-20 xl:gap-[400px] overflow-x-hidden xl:mx-auto xl:max-w-lg 2xl:max-w-3xl">
+  <main class="flex flex-col gap-20 overflow-x-hidden xl:mx-auto xl:max-w-lg xl:gap-[400px] 2xl:max-w-3xl">
     <ProfileCard />
     <HeroSection />
     <About />
