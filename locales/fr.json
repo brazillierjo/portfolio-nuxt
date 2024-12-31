@@ -118,6 +118,57 @@
       }
     ]
   },
+  "projects": {
+    "title": "mes projets",
+    "go_to_contact": "Contactez-moi",
+    "items": [
+      {
+        "title": "Walletoo - L'assistant de gestion de finances personnelles",
+        "description": "Walletoo est un assistant de gestion de finances personnelles. Il permet de gérer ses finances en toute simplicité. Il suffit de se connecter et d'entrer ses revenus et ses charges mensuelles. Walletoo se charge de calculer le reste à vivre et de vous proposer des solutions d'épargne, des graphiques etc.",
+        "appUrl": "",
+        "codeUrl": "https://github.com/brazillierjo/wallet",
+        "technologies": [
+          "React",
+          "Next.js",
+          "Bun",
+          "TypeScript",
+          "Elysia",
+          "PostgreSQL",
+          "Docker",
+          "TailwindCSS",
+          "Prisma"
+        ]
+      },
+      {
+        "title": "Générateur de séance de musculation [mobile-friendly only]",
+        "description": "ma-sante.fr est un générateur de séance de musculation 💪. Cette web app se charge de générer des séances avec des exercices toujours différents afin d'optimiser les résultats. Accompagné d'un GIF animé, les exercices sont faciles à reproduire.",
+        "appUrl": "https://ma-seance.vercel.app/",
+        "codeUrl": "https://github.com/brazillierjo/ma-seance",
+        "technologies": ["React", "TailwindCSS"]
+      },
+      {
+        "title": "Piano",
+        "description": "De l'enregistrement du son des clés jusqu'au design, ce projet m'a appris à gérer les évènements et les performances ! En plus, on peut y passer des heures sans avoir besoin d'en acheter un 🤓",
+        "appUrl": "https://brazillierjo.github.io/piano/",
+        "codeUrl": "https://github.com/brazillierjo/piano",
+        "technologies": ["JavaScript", "CSS", "HTML"]
+      },
+      {
+        "title": "Web Calculator",
+        "description": "Projet réalisé dans le but d'approfondir mes connaissances JavaScript Vanilla. Vous pouvez choisir entre des calculs de base ou des calculs avancés. Apprentissage du light/night mode.",
+        "appUrl": "https://brazillierjo.github.io/calculator/",
+        "codeUrl": "https://github.com/brazillierjo/calculator",
+        "technologies": ["JavaScript", "CSS", "HTML"]
+      },
+      {
+        "title": "Markdown Previewer",
+        "description": "Markdown réalisé dans le but d'une formation React. Déployé sur GitHub Pages.",
+        "appUrl": "https://brazillierjo.github.io/markdown/",
+        "codeUrl": "https://github.com/brazillierjo/markdown",
+        "technologies": ["React", "TailwindCSS", "Vite"]
+      }
+    ]
+  },
   "contact": {
     "title1": "Travaillons",
     "title2": "ensemble",

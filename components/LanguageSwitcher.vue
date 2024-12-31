@@ -16,7 +16,7 @@ const toggleLanguage = () => {
 </script>
 
 <template>
-  <div class="absolute top-5 left-5 flex items-center gap-4">
+  <div class="absolute left-5 top-5 flex items-center gap-4">
     <div class="flex gap-3">
       <span
         class="text-sm font-semibold transition-colors duration-300"
@@ -27,11 +27,11 @@ const toggleLanguage = () => {
     </div>
 
     <div
-      class="relative w-[52px] h-6 bg-tertiary rounded-full cursor-pointer flex items-center px-1.5 shadow-inner"
+      class="relative flex h-6 w-[52px] cursor-pointer items-center rounded-full bg-tertiary px-1.5 shadow-inner"
       @click="toggleLanguage"
     >
       <div
-        class="absolute w-5 h-5 bg-primary rounded-full shadow-md transition-transform duration-300"
+        class="absolute h-5 w-5 rounded-full bg-primary shadow-md transition-transform duration-300"
         :class="{ 'translate-x-5': currentLang === 'fr', 'translate-x-0': currentLang === 'en' }"
         aria-label="Toggle Language"
       />

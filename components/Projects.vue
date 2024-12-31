@@ -3,9 +3,11 @@ import { links } from "~/utils/links";
 import Tag from "~/components/ui/Tag.vue";
 import ProjectCard from "~/components/ui/ProjectCard.vue";
 import { useI18n } from "vue-i18n";
+import { useTranslatedProjects } from "~/hooks/useTranslatedProjects";
 
 const { t } = useI18n();
 
+const projects = useTranslatedProjects();
 const introduceLink = links.find((link) => link.id === "projects");
 </script>
 
@@ -22,7 +24,7 @@ const introduceLink = links.find((link) => link.id === "projects");
     <h1 class="text-2xl font-bold" v-motion-fade>my <span class="text-primary">projects</span>.</h1>
 
     <div class="grid grid-cols-1 gap-20">
-      <ProjectCard v-for="project in projects" :key="project.title" :project="project" />
+      <ProjectCard v-for="(project, index) in projects" :key="index" :project="project" />
     </div>
 
     <a

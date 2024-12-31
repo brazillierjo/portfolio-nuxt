@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { IProject } from "~/hooks/useTranslatedProjects";
+
 defineProps({
   project: {
     type: Object as () => IProject,
