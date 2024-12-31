@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { IExperience } from "~/utils/experiences";
-
 defineProps({
   items: {
     type: Array as () => IExperience[],
@@ -11,7 +9,7 @@ defineProps({
 
 <template>
   <div class="relative flex flex-col space-y-8">
-    <div v-for="(item, index) in items" :key="index" class="flex items-start" v-motion-roll-visible-left>
+    <div v-for="(item, index) in items" :key="index" class="flex items-start" v-motion-slide-visible-once-bottom>
       <!-- Timeline Dot -->
       <div class="flex-shrink-0">
         <div class="relative z-10 h-4 w-4 rounded-full bg-primary" />

@@ -9,7 +9,10 @@ defineProps({
 
 <template>
   <div v-motion-fade>
-    <img :src="project.image" :alt="project.title" class="w-full rounded-md" />
+    <div class="w-fit border border-tertiary">
+
+    <img :src="project.image" :alt="project.title" class="w-full max-h-[300px] object-contain" />
+    </div>
 
     <h3 class="mt-4 text-left text-lg font-semibold">{{ project.title }}</h3>
 

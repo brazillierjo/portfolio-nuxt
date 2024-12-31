@@ -24,5 +24,6 @@ useHead({
     <Experiences />
     <Educations />
     <Projects />
+    <Contact />
   </main>
 </template>

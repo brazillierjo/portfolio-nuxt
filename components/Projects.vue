@@ -21,5 +21,13 @@ const introduceLink = links.find((link) => link.name === "Projects");
     <div class="grid grid-cols-1 gap-20">
       <ProjectCard v-for="project in projects" :key="project.title" :project="project" />
     </div>
+
+    <a
+      href="#Contact"
+      class="w-fit items-center gap-2 rounded-full border-2 border-text px-4 py-2 text-sm uppercase text-text transition-all duration-300 lg:flex hover:bg-text hover:text-secondary"
+    >
+      Contact me
+      <Icon name="mdi:arrow-down" class="h-4 w-4 animate-bounce" />
+    </a>
   </section>
 </template>
