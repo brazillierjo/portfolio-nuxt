@@ -16,7 +16,6 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
   ],
   i18n: {
-    lazy: true,
     langDir: '../locales/',
     strategy: 'prefix_and_default',
     locales: [
