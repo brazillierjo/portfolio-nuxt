@@ -22,7 +22,7 @@ const closePanel = () => {
     <Transition name="slide">
       <div
         v-if="isOpen"
-        class="bg-bg fixed max-h-[calc(100vh-80px)] right-10 top-10 rounded-2xl z-40 h-full w-3/4 max-w-sm translate-x-0 text-white transition-transform duration-200"
+        class="fixed right-10 top-10 z-40 h-full max-h-[calc(100vh-80px)] w-3/4 max-w-sm translate-x-0 rounded-2xl bg-bg text-white transition-transform duration-200"
       >
         <div class="px-10 pt-28">
           <slot />

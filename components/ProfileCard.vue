@@ -22,24 +22,24 @@ import { Contact } from "~/utils/enums/Contact";
 
     <div class="flex flex-col gap-3 text-center">
       <a :href="`mailto:${Contact.Email}`" class="text-lg font-semibold">{{ Contact.Email }}</a>
-      <p class="text-tertiary">Based in Annecy, France 🇫🇷</p>
+      <p class="text-icons">Based in Annecy, France 🇫🇷</p>
     </div>
 
     <div class="my-6 flex justify-center gap-4">
       <a
         :href="Contact.GitHub"
         target="_blank"
-        class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-tertiary"
+        class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-icons"
       >
-        <Icon name="mdi:github" class="h-6 w-6 text-tertiary transition-all duration-150 hover:text-white" />
+        <Icon name="mdi:github" class="h-6 w-6 text-icons transition-all duration-150 hover:text-white" />
       </a>
 
       <a
         :href="Contact.LinkedIn"
         target="_blank"
-        class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-tertiary"
+        class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-icons"
       >
-        <Icon name="mdi:linkedin" class="h-6 w-6 text-tertiary transition-all duration-150 hover:text-white" />
+        <Icon name="mdi:linkedin" class="h-6 w-6 text-icons transition-all duration-150 hover:text-white" />
       </a>
     </div>
 

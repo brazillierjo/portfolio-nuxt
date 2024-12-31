@@ -6,40 +6,45 @@ const introduceLink = links.find((link) => link.name === "Introduction");
 </script>
 
 <template>
-  <section id="Introduction" class="xl:flex xl:h-screen xl:flex-col xl:justify-center xl:-mt-6">
-    <Tag classes="mb-8">
+  <section id="Introduction" class="flex flex-col gap-6 xl:-mt-6 xl:h-screen xl:justify-center xl:gap-12">
+    <Tag>
       <Icon :name="introduceLink?.icon ?? ''" class="h-4 w-4" />
       {{ introduceLink?.name }}
     </Tag>
 
-    <h1 class="mb-16 text-[40px] font-bold" v-motion-fade>
-      RINCON BRAZILLIER <span class="text-primary">Johan</span>.
-    </h1>
+    <h1 class="text-[40px] font-bold" v-motion-fade>RINCON BRAZILLIER <span class="text-primary">Johan</span>.</h1>
 
-    <div class="flex flex-col gap-4 text-lg text-icons" v-motion-slide-visible-right>
+    <div class="flex flex-col gap-2 text-lg text-icons xl:gap-4" v-motion-slide-visible-right>
       <p>Hi there! 👋</p>
       <p>I'm Johan, a Software Engineer passionate about crafting user-friendly web apps. Check out my work below!</p>
     </div>
 
-    <button
-      class="mt-10 flex items-center gap-2 rounded-full text-sm w-fit uppercase border-2 border-primary px-4 py-2 text-text animate-pulse hover:scale-105 transition-all duration-300">
-      Download my resume here
-      <Icon name="mdi:download" class="h-4 w-4" />
-    </button>
+    <div class="flex gap-4 items-center">
 
-    <div class="mt-20 flex gap-20 items-center">
-      <div class="flex flex-col gap-2 text-center">
-        <p class="text-4xl font-bold text-primary">5+</p>
-        <p class="text-icons text-sm uppercase">Years of <br /> experience</p>
-      </div>
+      <button
+        class="flex w-fit animate-pulse items-center gap-2 rounded-full border-2 border-primary px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:scale-105"
+      >
+        Download my resume here
+        <Icon name="mdi:download" class="h-4 w-4" />
+      </button>
+
+      <a
+        href="#About"
+        class="hidden w-fit items-center gap-2 rounded-full border-2 border-text px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:scale-105 hover:text-white lg:flex"
+      >
+        About me
+        <Icon name="mdi:arrow-down" class="h-4 w-4 animate-bounce" />
+      </a>
     </div>
 
-    <a
-      href="#About"
-      class="mt-16 flex items-center gap-2 rounded-full text-sm w-fit uppercase border-2 border-secondary px-4 py-2 text-text hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-300"
-    >
-      Scroll to About
-      <Icon name="mdi:arrow-down" class="h-4 w-4" />
-    </a>
+    <div class="flex items-center gap-20">
+      <div class="flex flex-col gap-2 text-center">
+        <p class="text-4xl font-bold text-primary">5+</p>
+        <p class="text-sm uppercase text-icons">
+          Years of <br />
+          experience
+        </p>
+      </div>
+    </div>
   </section>
 </template>

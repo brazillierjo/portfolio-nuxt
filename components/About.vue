@@ -6,13 +6,13 @@ const introduceLink = links.find((link) => link.name === "About");
 </script>
 
 <template>
-  <section id="About" class="xl:flex xl:h-screen xl:flex-col xl:justify-center xl:-mt-6">
+  <section id="About" class="xl:-mt-6 xl:flex xl:h-screen xl:flex-col xl:justify-center">
     <Tag classes="mb-8">
       <Icon :name="introduceLink?.icon ?? ''" class="h-4 w-4" />
       {{ introduceLink?.name }}
     </Tag>
 
-    <h1 class="mb-16 text-[40px] font-bold" v-motion-fade>
+    <h1 class="mb-4 text-[40px] font-bold xl:mb-16" v-motion-fade>
       RINCON BRAZILLIER <span class="text-primary">Johan</span>.
     </h1>
 
@@ -22,15 +22,19 @@ const introduceLink = links.find((link) => link.name === "About");
     </div>
 
     <button
-      class="mt-10 flex items-center gap-2 rounded-full text-sm w-fit uppercase border-2 border-primary px-4 py-2 text-text animate-pulse hover:scale-105 transition-all duration-300">
+      class="mt-10 flex w-fit animate-pulse items-center gap-2 rounded-full border-2 border-primary px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:scale-105"
+    >
       Download my resume here
       <Icon name="mdi:download" class="h-4 w-4" />
     </button>
 
-    <div class="mt-20 flex gap-20 items-center">
+    <div class="mt-20 flex items-center gap-20">
       <div class="flex flex-col gap-2 text-center">
         <p class="text-4xl font-bold text-primary">5+</p>
-        <p class="text-icons text-sm uppercase">Years of <br /> experience</p>
+        <p class="text-sm uppercase text-icons">
+          Years of <br />
+          experience
+        </p>
       </div>
     </div>
   </section>
