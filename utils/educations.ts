@@ -2,7 +2,7 @@ export type IEducation = {
   company: string;
   title: string;
   years: string;
-  description: string;
+  description?: string;
   technologies: string[];
 };
 

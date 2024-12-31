@@ -28,7 +28,7 @@ defineProps({
         </h3>
 
         <!-- Description -->
-        <p class="mt-2 text-sm text-text">
+        <p v-if="item.description" class="mt-2 text-sm text-text">
           {{ item.description }}
         </p>
 
