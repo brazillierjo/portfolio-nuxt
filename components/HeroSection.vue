@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Tag from "~/components/ui/Tag.vue";
-import { links } from "~/utils/links";
 
 const introduceLink = links.find((link) => link.name === "Introduction");
 </script>
@@ -44,6 +43,19 @@ const introduceLink = links.find((link) => link.name === "Introduction");
           experience
         </p>
       </div>
+    </div>
+
+    <div class="mt-8 flex flex-wrap justify-center gap-4">
+      <a
+        v-for="stack in stacks"
+        :key="stack.name"
+        :href="stack.link"
+        target="_blank"
+        class="flex items-center justify-center rounded-full border p-3 transition-all bg-white duration-300 hover:scale-110 hover:border-primary"
+      >
+        <img :src="stack.icon" class="h-8 w-8" />
+        <span class="sr-only">{{ stack.name }}</span>
+      </a>
     </div>
   </section>
 </template>

@@ -14,7 +14,7 @@ const introduceLink = links.find((link) => link.name === "About");
 
     <h1 class="text-2xl font-bold" v-motion-fade>my <span class="text-primary">path</span>.</h1>
 
-    <div class="flex flex-col gap-6 text-md">
+    <div class="text-md flex flex-col gap-6">
       <p class="text-text">
         📚 I initially stopped studying after completing a Technological Baccalaureate. From odd jobs to odd jobs, I
         quickly realized that this context would not be enough for me. So, at the age of 21, I decided to resume my
@@ -52,5 +52,13 @@ const introduceLink = links.find((link) => link.name === "About");
         various styles into dynamic and interactive websites to enhance the user experience.
       </p>
     </div>
+
+    <a
+      href="#Experience"
+      class="hidden w-fit items-center gap-2 rounded-full border-2 border-text px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:scale-105 hover:text-white lg:flex"
+    >
+      My experiences
+      <Icon name="mdi:arrow-down" class="h-4 w-4 animate-bounce" />
+    </a>
   </section>
 </template>
