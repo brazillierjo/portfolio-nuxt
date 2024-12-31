@@ -16,7 +16,7 @@ const toggleLanguage = () => {
 </script>
 
 <template>
-  <div class="absolute left-5 top-5 flex items-center gap-4">
+  <div class="absolute left-5 top-7 flex items-center gap-4 xl:top-5">
     <div class="flex gap-3">
       <span
         class="text-sm font-semibold transition-colors duration-300"
