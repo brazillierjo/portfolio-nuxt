@@ -1,4 +1,10 @@
-export const stacks = [
+type Stack = {
+  name: string;
+  icon: string;
+  link: string;
+};
+
+export const stacks: Stack[] = [
   {
     name: "TypeScript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",

@@ -38,7 +38,7 @@ const paragraphs = [
     </div>
 
     <a
-      href="#Experience"
+      href="#Experiences"
       class="hidden w-fit items-center gap-2 rounded-full border-2 border-text px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:scale-105 hover:text-white lg:flex"
     >
       My experiences

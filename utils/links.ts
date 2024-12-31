@@ -1,7 +1,12 @@
-export const links = [
+type Link = {
+  name: string;
+  icon: string;
+};
+
+export const links: Link[] = [
   { name: "Introduction", icon: "mdi:home" },
   { name: "About", icon: "mdi:account" },
-  { name: "Experience", icon: "mdi:briefcase" },
+  { name: "Experiences", icon: "mdi:briefcase" },
   { name: "Education", icon: "mdi:school" },
   { name: "Contact", icon: "mdi:email" },
 ];

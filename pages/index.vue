@@ -21,5 +21,6 @@ useHead({
     <ProfileCard />
     <HeroSection />
     <About />
+    <Experiences />
   </main>
 </template>
