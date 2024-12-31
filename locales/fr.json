@@ -10,6 +10,17 @@
     "resume": "Télécharger mon CV ici",
     "about_me": "À propos de moi",
     "years_of": "Années",
-    "experience": "d'éxperience"
+    "experience": "d'expérience"
+  },
+  "aboutMe": {
+    "title1": "mon",
+    "title2": "parcours",
+    "phrase1": "📚 J'ai d'abord arrêté les études après un Baccalauréat Technologique. De petits boulots en petits boulots, j'ai rapidement compris que ce contexte ne me suffirait pas. J'ai donc repris mes études à 21 ans pour une licence en e-commerce.",
+    "phrase2": "🏋️ Ces études m'ont permis d'exercer pendant 6 ans en tant que SEO. Cette expérience m'a appris le fonctionnement du monde professionnel, le travail en équipe ainsi que le poids des responsabilités mais également la gestion d'un back office et d'un référencement naturel.",
+    "phrase3": "🍀 En tant que SEO, travailler en étroite collaboration avec des développeurs m'a donné envie de me plonger dans ce monde très technique. Je me suis donc offert une formation bootcamp de 6 mois pour acquérir les bases de la programmation web et de l'écriture de code. Suite à cela, j'ai poursuivi mon apprentissage en alternance avec une Licence Intégrateur/Développeur d'Applications Web et mobile avec spécialité React et NodeJs.",
+    "phrase4": "🍾 Depuis, j'ai intégré pas mal d'entreprises pour des intégrations complètes, des coups de mains pour livrer un projet à temps, apporter des modifications, ajouter des fonctionnalités...",
+    "phrase5": "👷 Aujourd'hui, fort de mon parcours, je maîtrise les rouages de la méthode Agile, les principes du Clean Code, et les pipelines CI/CD, assurant ainsi la scalabilité et la maintenabilité optimales de chaque application web que je développe. Mon expérience variée, du SEO à la programmation, me permet d'apporter une perspective unique à chaque projet.",
+    "phrase6": "🧘‍♂️ Développeur Web depuis 2020, j'apprécie particulièrement travailler avec Nuxt & NextJs dans un environnement Agile, en suivant les principes du clean code et en intégrant des pipelines CI/CD. J'adore transformer des maquettes de tout style en sites web dynamiques et interactifs pour améliorer l'expérience utilisateur.",
+    "my_experiences": "Mes expériences"
   }
 }
