@@ -3,7 +3,9 @@ import { ref } from "vue";
 import Panel from "~/components/ui/Panel.vue";
 import { links } from "~/utils/links";
 import { useRoute } from "vue-router";
+import { useI18n } from "vue-i18n";
 
+const { t } = useI18n();
 const route = useRoute();
 
 const isMenuOpen = ref(false);
@@ -35,7 +37,7 @@ const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
         <a
           v-for="link in links"
           :key="link.name"
-          :href="`#${link.name}`"
+          :href="`#${link.id}`"
           class="group flex items-center gap-4 text-lg transition-colors duration-150"
           @click="toggleMenu"
         >
@@ -43,17 +45,17 @@ const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
             :name="link.icon"
             :class="[
               'h-5 w-5 text-icons transition-colors duration-150 group-hover:text-primary',
-              isActive(link.name) ? 'text-primary' : '',
+              isActive(link.id) ? 'text-primary' : '',
             ]"
           />
 
           <span
             :class="[
               'text-sm text-tertiary transition-colors duration-150 group-hover:text-white',
-              isActive(link.name) ? 'text-white' : '',
+              isActive(link.id) ? 'text-white' : '',
             ]"
           >
-            {{ link.name }}
+            {{ t(link.name) }}
           </span>
         </a>
       </nav>

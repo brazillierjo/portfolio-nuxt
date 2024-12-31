@@ -1,4 +1,12 @@
 {
+  "links": {
+    "introduction": "Introduction",
+    "about": "À propos",
+    "experiences": "Expériences",
+    "educations": "Educations",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
   "profileCard": {
     "developer": "Développeur.",
     "based_in": "Basé à Annecy, France 🇫🇷",
