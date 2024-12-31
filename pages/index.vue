@@ -30,5 +30,6 @@ useHead({
     <Educations />
     <Projects />
     <Contact />
+    <Footer />
   </main>
 </template>

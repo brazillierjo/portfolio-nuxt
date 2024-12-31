@@ -174,5 +174,8 @@
     "title2": "ensemble",
     "phrase": "Contactez-moi si vous souhaitez travailler ensemble !",
     "contact_me": "Contactez-moi"
+  },
+  "footer": {
+    "built_with": "Construit avec Nuxt et TailwindCSS avec ❤️"
   }
 }

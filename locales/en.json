@@ -174,5 +174,8 @@
     "title2": "together",
     "phrase": "Feel free to reach out to me via email for collaborations or inquiries.",
     "contact_me": "Contact me"
+  },
+  "footer": {
+    "built_with": "Built with Nuxt and TailwindCSS with ❤️"
   }
 }

@@ -25,7 +25,7 @@ const introduceLink = links.find((link) => link.id === "contact");
 
     <a class="text-xl text-text" :href="`mailto:${Contact.Email}`">{{ Contact.Email }}</a>
 
-    <p class="text-lg text-gray-600">{{ t("contact.phrase") }}</p>
+    <p class="text-lg text-icons">{{ t("contact.phrase") }}</p>
 
     <a
       :href="`mailto:${Contact.Email}`"
