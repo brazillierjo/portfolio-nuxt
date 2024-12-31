@@ -47,11 +47,12 @@ const introduceLink = links.find((link) => link.name === "Introduction");
 
     <div class="mt-8 flex flex-wrap justify-center gap-4">
       <a
-        v-for="stack in stacks"
+        v-for="(stack, index) in stacks"
         :key="stack.name"
         :href="stack.link"
         target="_blank"
-        class="flex items-center justify-center rounded-full border p-3 transition-all bg-white duration-300 hover:scale-110 hover:border-primary"
+        class="flex items-center justify-center rounded-full border p-3 transition-all bg-white duration-300 hover:scale-110 hover:border-primary stack-icon"
+        :style="{ animationDelay: `${index * 0.1}s` }"
       >
         <img :src="stack.icon" :alt="stack.name" class="h-8 w-8" />
         <span class="sr-only">{{ stack.name }}</span>
@@ -59,3 +60,21 @@ const introduceLink = links.find((link) => link.name === "Introduction");
     </div>
   </section>
 </template>
+
+<style scoped>
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stack-icon {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+</style>
