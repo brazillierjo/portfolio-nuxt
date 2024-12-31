@@ -3,5 +3,13 @@
     "developer": "Developer.",
     "based_in": "Based in Annecy, France 🇫🇷",
     "hire_me": "HIRE ME!"
+  },
+  "heroSection": {
+    "line1": "Hi there!",
+    "line2": "I'm Johan, a Software Engineer passionate about crafting user-friendly web apps. Check out my work below!",
+    "resume": "Download my resume here",
+    "about_me": "About me",
+    "years_of": "years of",
+    "experience": "experience"
   }
 }

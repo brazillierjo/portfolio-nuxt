@@ -3,5 +3,13 @@
     "developer": "Développeur.",
     "based_in": "Basé à Annecy, France 🇫🇷",
     "hire_me": "EMBAUCHEZ-MOI !"
+  },
+  "heroSection": {
+    "line1": "Bonjour!",
+    "line2": "Je m'appelle Johan, je suis un développeur passionné par la création d'applications web. Regardez mes projets ci-dessous !",
+    "resume": "Télécharger mon CV ici",
+    "about_me": "À propos de moi",
+    "years_of": "Années",
+    "experience": "d'éxperience"
   }
 }

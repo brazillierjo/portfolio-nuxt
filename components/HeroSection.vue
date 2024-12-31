@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import Tag from "~/components/ui/Tag.vue";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const introduceLink = links.find((link) => link.name === "Introduction");
 </script>
@@ -17,8 +20,8 @@ const introduceLink = links.find((link) => link.name === "Introduction");
     <h1 class="text-[40px] font-bold" v-motion-fade>RINCON BRAZILLIER <span class="text-primary">Johan</span>.</h1>
 
     <div class="flex flex-col gap-2 text-lg text-icons xl:gap-4" v-motion-slide-visible-right>
-      <p>Hi there! 👋</p>
-      <p>I'm Johan, a Software Engineer passionate about crafting user-friendly web apps. Check out my work below!</p>
+      <p>{{ t('heroSection.line1') }} 👋</p>
+      <p>{{ t('heroSection.line2') }}</p>
     </div>
 
     <div class="flex flex-col items-center gap-4 lg:flex-row">
@@ -26,7 +29,7 @@ const introduceLink = links.find((link) => link.name === "Introduction");
         <button
           class="flex w-fit animate-pulse items-center gap-2 rounded-full border-2 border-primary px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:bg-primary hover:text-secondary"
         >
-          Download my resume here
+          {{ t('heroSection.resume') }}
           <Icon name="mdi:download" class="h-4 w-4" />
         </button>
       </a>
@@ -35,7 +38,7 @@ const introduceLink = links.find((link) => link.name === "Introduction");
         href="#About"
         class="w-fit items-center gap-2 rounded-full border-2 border-text px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:bg-text hover:text-secondary lg:flex"
       >
-        About me
+        {{ t('heroSection.about_me') }}
         <Icon name="mdi:arrow-down" class="h-4 w-4 animate-bounce" />
       </a>
     </div>
@@ -44,8 +47,8 @@ const introduceLink = links.find((link) => link.name === "Introduction");
       <div class="flex flex-col gap-2 text-center">
         <p class="text-4xl font-bold text-primary">5+</p>
         <p class="text-sm uppercase text-icons">
-          Years of <br />
-          experience
+          {{ t('heroSection.years_of') }} <br />
+          {{ t('heroSection.experience') }}
         </p>
       </div>
     </div>
