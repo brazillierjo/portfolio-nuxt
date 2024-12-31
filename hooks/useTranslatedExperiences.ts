@@ -1,17 +1,10 @@
 import { useI18n } from "vue-i18n";
-
-export interface IExperience {
-  company: string;
-  title: string;
-  years: string;
-  description: string;
-  technologies: string[] | null;
-}
+import type { ITimelineItem } from "~/utils/types/timeline";
 
 export const useTranslatedExperiences = () => {
   const { t } = useI18n();
 
-  const experiences: IExperience[] = [
+  const experiences: ITimelineItem[] = [
     {
       company: t("experiences.items[0].company"),
       title: t("experiences.items[0].title"),

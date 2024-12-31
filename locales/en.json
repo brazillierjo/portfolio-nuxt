@@ -7,6 +7,9 @@
     "projects": "Projects",
     "contact": "Contact"
   },
+  "timeline": {
+    "tags": "Technologies"
+  },
   "profileCard": {
     "developer": "Developer.",
     "based_in": "Based in Annecy, France 🇫🇷",
@@ -76,6 +79,42 @@
         "title": "Various jobs in different fields",
         "years": "2011 - 2014",
         "description": "Acquired versatile skills and valuable experience by working in diverse roles across multiple industries."
+      }
+    ]
+  },
+  "educations": {
+    "title": "my educations",
+    "go_to_projects": "My projects",
+    "items": [
+      {
+        "company": "3WAcademy",
+        "title": "(BSc) Web and Mobile Applications Integration/Development",
+        "years": "2020 - 2021",
+        "description": ""
+      },
+      {
+        "company": "OpenClassrooms",
+        "title": "Web Developer - Level 5 RNCP Certification",
+        "years": "2020",
+        "description": ""
+      },
+      {
+        "company": "University of Toulon",
+        "title": "(BSc) E-commerce & Digital Marketing",
+        "years": "2016 - 2017",
+        "description": ""
+      },
+      {
+        "company": "Défi83 - Toulon",
+        "title": "(Associate's Degree) Business Unit Management",
+        "years": "2014 - 2016",
+        "description": ""
+      },
+      {
+        "company": "Jean Aicard - Hyères",
+        "title": "Baccalaureate in Business Science & Technology",
+        "years": "2010 - 2012",
+        "description": ""
       }
     ]
   },

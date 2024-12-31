@@ -19,7 +19,9 @@ const introduceLink = links.find((link) => link.id === "contact");
       {{ t(introduceLink.name) }}
     </Tag>
 
-    <h1 class="text-2xl font-bold">{{ t("contact.title1") }} <span class="text-primary">{{ t("contact.title2") }}</span> !</h1>
+    <h1 class="text-2xl font-bold">
+      {{ t("contact.title1") }} <span class="text-primary">{{ t("contact.title2") }}</span> !
+    </h1>
 
     <a class="text-xl text-text" :href="`mailto:${Contact.Email}`">{{ Contact.Email }}</a>
 

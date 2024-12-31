@@ -15,7 +15,7 @@ export const projects: IProject[] = [
     image: "/webps/walletoo.webp",
     appUrl: "",
     codeUrl: "https://github.com/brazillierjo/wallet",
-    technologies: ["React", "NodeJS", "TypeScript"],
+    technologies: ["React", "Next.js", "Bun", "TypeScript", "Elysia", "PostgreSQL", "Docker", "TailwindCSS", "Prisma"],
   },
   {
     title: "Workout Session Generator [mobile-friendly only]",
@@ -24,7 +24,7 @@ export const projects: IProject[] = [
     image: "/webps/workoutGenerator.webp",
     appUrl: "https://ma-seance.vercel.app/",
     codeUrl: "https://github.com/brazillierjo/ma-seance",
-    technologies: ["Vue", "TailwindCSS", "Firebase"],
+    technologies: ["React", "TailwindCSS"],
   },
   {
     title: "Piano",

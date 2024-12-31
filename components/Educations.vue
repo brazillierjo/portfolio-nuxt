@@ -2,10 +2,11 @@
 import { links } from "~/utils/links";
 import Tag from "~/components/ui/Tag.vue";
 import Timeline from "~/components/ui/Timeline.vue";
-import { educations } from "~/utils/educations";
 import { useI18n } from "vue-i18n";
+import { useTranslatedEducations } from "~/hooks/useTranslatedEducations";
 
 const { t } = useI18n();
+const translatedEducations = useTranslatedEducations();
 
 const introduceLink = links.find((link) => link.id === "educations");
 </script>
@@ -22,7 +23,7 @@ const introduceLink = links.find((link) => link.id === "educations");
 
     <h1 class="text-2xl font-bold" v-motion-fade>my <span class="text-primary">education</span>.</h1>
 
-    <Timeline :items="educations" />
+    <Timeline :items="translatedEducations" />
 
     <a
       href="#projects"

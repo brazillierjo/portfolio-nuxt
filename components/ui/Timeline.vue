@@ -1,7 +1,12 @@
 <script setup lang="ts">
+import type { ITimelineItem } from "~/utils/types/timeline";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+
 defineProps({
   items: {
-    type: Array as () => IExperience[] | IEducation[],
+    type: Array as () => ITimelineItem[],
     required: true,
   },
 });
@@ -34,7 +39,8 @@ defineProps({
 
         <!-- Technologies -->
         <div v-if="item.technologies && item.technologies.length" class="mt-5">
-          <p class="text-sm font-semibold text-icons">Technologies:</p>
+          <p class="text-sm font-semibold text-icons">{{ t("timeline.tags") }}:</p>
+
           <ul class="mt-1 flex flex-wrap gap-2">
             <li
               v-for="(tech, techIndex) in item.technologies"
