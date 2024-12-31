@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import Button from "~/components/ui/Button.vue";
 import { Contact } from "~/utils/enums/Contact";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -9,7 +12,7 @@ import { Contact } from "~/utils/enums/Contact";
   >
     <div class="mb-8 flex items-center justify-between">
       <h1 class="flex items-center gap-1 text-2xl font-bold" v-motion-fade>Johan</h1>
-      <p class="text-xl" v-motion-fade>Developer.</p>
+      <p class="text-xl" v-motion-fade>{{ t('profileCard.developer') }}</p>
     </div>
 
     <div class="mb-4 flex justify-center">
@@ -22,7 +25,7 @@ import { Contact } from "~/utils/enums/Contact";
 
     <div class="flex flex-col gap-3 text-center">
       <a :href="`mailto:${Contact.Email}`" class="text-lg font-semibold">{{ Contact.Email }}</a>
-      <p class="text-icons">Based in Annecy, France 🇫🇷</p>
+      <p class="text-icons">{{ t('profileCard.based_in') }}</p>
     </div>
 
     <div class="my-6 flex justify-center gap-4">
@@ -48,7 +51,7 @@ import { Contact } from "~/utils/enums/Contact";
         <span class="flex items-center gap-2">
           <Icon name="mdi:email-outline" class="h-5 w-5" />
 
-          HIRE ME!
+          {{ t('profileCard.hire_me') }}
         </span>
       </Button>
     </a>
