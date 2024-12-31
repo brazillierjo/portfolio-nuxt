@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { links } from "~/utils/links";
 import Tag from "~/components/ui/Tag.vue";
-import { experiences } from "~/utils/experiences";
 import Timeline from "~/components/ui/Timeline.vue";
 import { useI18n } from "vue-i18n";
+import { useTranslatedExperiences } from "~/hooks/useTranslatedExperiences";
 
 const { t } = useI18n();
+const translatedExperiences = useTranslatedExperiences();
 
 const introduceLink = links.find((link) => link.id === "experiences");
 </script>
@@ -22,7 +23,7 @@ const introduceLink = links.find((link) => link.id === "experiences");
 
     <h1 class="text-2xl font-bold" v-motion-fade>my <span class="text-primary">experiences</span>.</h1>
 
-    <Timeline :items="experiences" />
+    <Timeline :items="translatedExperiences" />
 
     <a
       href="#educations"
