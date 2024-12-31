@@ -19,16 +19,8 @@ export default {
         secondary: "#000000",
         tertiary: "#575757",
         icons: "#999",
-
-        dark: {
-          bg: "#202020",
-          text: "#ffffff",
-        },
-
-        light: {
-          bg: "#ffffff",
-          text: "#202020",
-        },
+        bg: "#202020",
+        text: "#ffffff",
       },
     },
   },

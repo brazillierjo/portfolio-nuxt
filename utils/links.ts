@@ -1,5 +1,5 @@
 export const links = [
-  { name: "Introduce", icon: "mdi:home" },
+  { name: "Introduction", icon: "mdi:home" },
   { name: "About", icon: "mdi:account" },
   { name: "Experience", icon: "mdi:briefcase" },
   { name: "Education", icon: "mdi:school" },

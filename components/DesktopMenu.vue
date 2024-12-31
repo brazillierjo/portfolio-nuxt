@@ -3,7 +3,7 @@ import { links } from "~/utils/links";
 </script>
 
 <template>
-  <div class="hidden lg:fixed lg:right-8 lg:top-1/2 lg:block lg:-translate-y-1/2">
+  <div class="hidden xl:fixed xl:right-8 xl:top-1/2 xl:block xl:-translate-y-1/2">
     <nav
       class="flex w-fit min-w-[50px] flex-col items-center gap-5 rounded-full border border-tertiary bg-transparent py-6"
     >

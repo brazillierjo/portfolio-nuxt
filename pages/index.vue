@@ -8,20 +8,17 @@ useHead({
     },
     { name: "keywords", content: ["Developer", "Portfolio", "Developer Portflio"] },
   ],
-
 });
 </script>
-
 
 <template>
   <!-- Menus -->
   <DesktopMenu />
   <MobileMenu />
 
-  <!-- Profile floating card -->
-  <ProfileCard />
-
   <!-- Sections -->
-
+  <main class="flex flex-col gap-10 xl:mx-auto xl:max-w-lg 2xl:max-w-4xl">
+    <ProfileCard />
+    <HeroSection />
+  </main>
 </template>
-

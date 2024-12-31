@@ -12,7 +12,7 @@ const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
   <div>
     <!-- Burger Menu Button -->
     <button
-      class="fixed right-5 top-5 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-transparent"
+      class="fixed right-14 top-14 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-transparent"
       @click="toggleMenu"
     >
       <Icon
