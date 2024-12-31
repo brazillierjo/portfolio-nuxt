@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineProps({
   items: {
-    type: Array as () => IExperience[],
+    type: Array as () => IExperience[] | IEducation[],
     required: true,
   },
 });
