@@ -59,11 +59,18 @@ const introduceLink = links.find((link) => link.id === "introduction");
         :key="stack.name"
         :href="stack.link"
         target="_blank"
-        class="stack-icon flex items-center justify-center rounded-full border bg-white p-3 transition-all duration-300 hover:border-primary"
+        class="group flex flex-col items-center transition-all duration-300"
         :style="{ animationDelay: `${index * 0.1}s` }"
       >
-        <img :src="stack.icon" :alt="stack.name" class="h-8 w-8" />
-        <span class="sr-only">{{ stack.name }}</span>
+        <div
+          class="stack-icon flex items-center justify-center rounded-full border bg-white p-3 transition-all duration-300 group-hover:border-primary"
+        >
+          <img :src="stack.icon" :alt="stack.name" class="h-8 w-8" />
+        </div>
+
+        <span class="mt-2 text-sm text-text transition-colors duration-300 group-hover:text-primary">
+          {{ stack.name }}
+        </span>
       </a>
     </div>
   </section>
