@@ -2,11 +2,11 @@
 import Tag from "~/components/ui/Tag.vue";
 import { links } from "~/utils/links";
 
-const introduceLink = links.find((link) => link.name === "Introduction");
+const introduceLink = links.find((link) => link.name === "About");
 </script>
 
 <template>
-  <section id="Introduction" class="xl:flex xl:h-screen xl:flex-col xl:justify-center xl:-mt-6">
+  <section id="About" class="xl:flex xl:h-screen xl:flex-col xl:justify-center xl:-mt-6">
     <Tag classes="mb-8">
       <Icon :name="introduceLink?.icon ?? ''" class="h-4 w-4" />
       {{ introduceLink?.name }}
@@ -33,13 +33,5 @@ const introduceLink = links.find((link) => link.name === "Introduction");
         <p class="text-icons text-sm uppercase">Years of <br /> experience</p>
       </div>
     </div>
-
-    <a
-      href="#About"
-      class="mt-16 flex items-center gap-2 rounded-full text-sm w-fit uppercase border-2 border-secondary px-4 py-2 text-text hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-300"
-    >
-      Scroll to About
-      <Icon name="mdi:arrow-down" class="h-4 w-4" />
-    </a>
   </section>
 </template>
