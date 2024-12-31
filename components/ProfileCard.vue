@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Button from "~/components/ui/Button.vue";
-import { Contact } from "~/utils/enums/Contact";
-import { useI18n } from "vue-i18n";
+import Button from '~/components/ui/Button.vue'
+import { Contact } from '~/utils/enums/Contact'
+import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n();
+const { t } = useI18n()
 </script>
 
 <template>
@@ -11,8 +11,10 @@ const { t } = useI18n();
     class="relative mx-auto w-full rounded-3xl border border-tertiary px-4 py-6 xl:fixed xl:left-8 xl:top-1/2 xl:max-w-[300px] xl:-translate-y-1/2 xl:p-6"
   >
     <div class="mb-8 flex items-center justify-between">
-      <h1 class="flex items-center gap-1 text-2xl font-bold" v-motion-fade>Johan</h1>
-      <p class="text-xl" v-motion-fade>{{ t("profileCard.developer") }}</p>
+      <h1 class="flex items-center gap-1 text-2xl font-bold" v-motion-fade>
+        Johan
+      </h1>
+      <p class="text-xl" v-motion-fade>{{ t('profileCard.developer') }}</p>
     </div>
 
     <div class="mb-4 flex justify-center">
@@ -24,8 +26,10 @@ const { t } = useI18n();
     </div>
 
     <div class="flex flex-col gap-3 text-center">
-      <a :href="`mailto:${Contact.Email}`" class="text-lg font-semibold">{{ Contact.Email }}</a>
-      <p class="text-icons">{{ t("profileCard.based_in") }}</p>
+      <a :href="`mailto:${Contact.Email}`" class="text-lg font-semibold">{{
+        Contact.Email
+      }}</a>
+      <p class="text-icons">{{ t('profileCard.based_in') }}</p>
     </div>
 
     <div class="my-6 flex justify-center gap-4">
@@ -34,7 +38,10 @@ const { t } = useI18n();
         target="_blank"
         class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-icons"
       >
-        <Icon name="mdi:github" class="h-6 w-6 text-icons transition-all duration-150 hover:text-white" />
+        <Icon
+          name="mdi:github"
+          class="h-6 w-6 text-icons transition-all duration-150 hover:text-white"
+        />
       </a>
 
       <a
@@ -42,16 +49,23 @@ const { t } = useI18n();
         target="_blank"
         class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-icons"
       >
-        <Icon name="mdi:linkedin" class="h-6 w-6 text-icons transition-all duration-150 hover:text-white" />
+        <Icon
+          name="mdi:linkedin"
+          class="h-6 w-6 text-icons transition-all duration-150 hover:text-white"
+        />
       </a>
     </div>
 
     <a :href="`mailto:${Contact.Email}`">
-      <Button type="button" classes="w-full md:w-fit md:mx-auto md:min-w-[200px]" v-motion-fade>
+      <Button
+        type="button"
+        classes="w-full md:w-fit md:mx-auto md:min-w-[200px]"
+        v-motion-fade
+      >
         <span class="flex items-center gap-2">
           <Icon name="mdi:email-outline" class="h-5 w-5" />
 
-          {{ t("profileCard.hire_me") }}
+          {{ t('profileCard.hire_me') }}
         </span>
       </Button>
     </a>

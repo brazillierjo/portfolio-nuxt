@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
-import { useRouter } from "vue-router";
+import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 
-const { locale } = useI18n();
-const router = useRouter();
+const { locale } = useI18n()
+const router = useRouter()
 
-const currentLang = locale.value;
+const currentLang = locale.value
 
 const toggleLanguage = () => {
-  const newLang = currentLang === "en" ? "fr" : "en";
-  locale.value = newLang;
+  const newLang = currentLang === 'en' ? 'fr' : 'en'
+  locale.value = newLang
 
-  router.push({ path: `/${newLang}` });
-};
+  router.push({ path: `/${newLang}` })
+}
 </script>
 
 <template>
@@ -20,7 +20,10 @@ const toggleLanguage = () => {
     <div class="flex gap-3">
       <span
         class="text-sm font-semibold transition-colors duration-300"
-        :class="{ 'text-text': currentLang === 'en', 'text-icons': currentLang !== 'en' }"
+        :class="{
+          'text-text': currentLang === 'en',
+          'text-icons': currentLang !== 'en',
+        }"
       >
         EN
       </span>
@@ -32,7 +35,10 @@ const toggleLanguage = () => {
     >
       <div
         class="absolute h-5 w-5 rounded-full bg-primary shadow-md transition-transform duration-300"
-        :class="{ 'translate-x-5': currentLang === 'fr', 'translate-x-0': currentLang === 'en' }"
+        :class="{
+          'translate-x-5': currentLang === 'fr',
+          'translate-x-0': currentLang === 'en',
+        }"
         aria-label="Toggle Language"
       />
     </div>
@@ -40,7 +46,10 @@ const toggleLanguage = () => {
     <div class="flex gap-3">
       <span
         class="text-sm font-semibold transition-colors duration-300"
-        :class="{ 'text-text': currentLang === 'fr', 'text-icons': currentLang !== 'fr' }"
+        :class="{
+          'text-text': currentLang === 'fr',
+          'text-icons': currentLang !== 'fr',
+        }"
       >
         FR
       </span>

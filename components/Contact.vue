@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { Contact } from "~/utils/enums/Contact";
-import Tag from "~/components/ui/Tag.vue";
-import { useI18n } from "vue-i18n";
+import { Contact } from '~/utils/enums/Contact'
+import Tag from '~/components/ui/Tag.vue'
+import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n();
+const { t } = useI18n()
 
-const introduceLink = links.find((link) => link.id === "contact");
+const introduceLink = links.find(link => link.id === 'contact')
 </script>
 
 <template>
@@ -20,18 +20,21 @@ const introduceLink = links.find((link) => link.id === "contact");
     </Tag>
 
     <h1 class="text-2xl font-bold">
-      {{ t("contact.title1") }} <span class="text-primary">{{ t("contact.title2") }}</span> !
+      {{ t('contact.title1') }}
+      <span class="text-primary">{{ t('contact.title2') }}</span> !
     </h1>
 
-    <a class="text-xl text-text" :href="`mailto:${Contact.Email}`">{{ Contact.Email }}</a>
+    <a class="text-xl text-text" :href="`mailto:${Contact.Email}`">{{
+      Contact.Email
+    }}</a>
 
-    <p class="text-lg text-icons">{{ t("contact.phrase") }}</p>
+    <p class="text-lg text-icons">{{ t('contact.phrase') }}</p>
 
     <a
       :href="`mailto:${Contact.Email}`"
       class="hover:bg-primary-light flex items-center gap-2 rounded-md bg-primary px-6 py-3 font-semibold text-secondary shadow-md transition duration-300"
     >
-      {{ t("contact.contact_me") }}
+      {{ t('contact.contact_me') }}
       <Icon name="mdi:email-outline" class="h-5 w-5" />
     </a>
   </section>

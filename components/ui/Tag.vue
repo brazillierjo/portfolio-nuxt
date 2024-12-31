@@ -3,7 +3,7 @@ const props = defineProps({
   classes: {
     type: String,
   },
-});
+})
 </script>
 
 <template>

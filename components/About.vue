@@ -1,20 +1,20 @@
 <script setup lang="ts">
-import Tag from "~/components/ui/Tag.vue";
-import { links } from "~/utils/links";
-import { useI18n } from "vue-i18n";
+import Tag from '~/components/ui/Tag.vue'
+import { links } from '~/utils/links'
+import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n();
+const { t } = useI18n()
 
-const introduceLink = links.find((link) => link.id === "about");
+const introduceLink = links.find(link => link.id === 'about')
 
 const paragraphKeys = [
-  "aboutMe.phrase1",
-  "aboutMe.phrase2",
-  "aboutMe.phrase3",
-  "aboutMe.phrase4",
-  "aboutMe.phrase5",
-  "aboutMe.phrase6",
-];
+  'aboutMe.phrase1',
+  'aboutMe.phrase2',
+  'aboutMe.phrase3',
+  'aboutMe.phrase4',
+  'aboutMe.phrase5',
+  'aboutMe.phrase6',
+]
 </script>
 
 <template>
@@ -28,7 +28,8 @@ const paragraphKeys = [
     </Tag>
 
     <h1 class="text-2xl font-bold" v-motion-fade>
-      {{ t("aboutMe.title1") }} <span class="text-primary">{{ t("aboutMe.title2") }}</span
+      {{ t('aboutMe.title1') }}
+      <span class="text-primary">{{ t('aboutMe.title2') }}</span
       >.
     </h1>
 
@@ -47,7 +48,7 @@ const paragraphKeys = [
       href="#experiences"
       class="w-fit items-center gap-2 rounded-full border-2 border-text px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:bg-text hover:text-secondary lg:flex"
     >
-      {{ t("aboutMe.go_to_my_experiences") }}
+      {{ t('aboutMe.go_to_my_experiences') }}
       <Icon name="mdi:arrow-down" class="h-4 w-4 animate-bounce" />
     </a>
   </section>

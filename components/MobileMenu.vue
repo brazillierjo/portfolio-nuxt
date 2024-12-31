@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import Panel from "~/components/ui/Panel.vue";
-import { links } from "~/utils/links";
-import { useRoute } from "vue-router";
-import { useI18n } from "vue-i18n";
+import { ref } from 'vue'
+import Panel from '~/components/ui/Panel.vue'
+import { links } from '~/utils/links'
+import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n();
-const route = useRoute();
+const { t } = useI18n()
+const route = useRoute()
 
-const isMenuOpen = ref(false);
-const isActive = (linkName: string) => route.hash === `#${linkName}`;
+const isMenuOpen = ref(false)
+const isActive = (linkName: string) => route.hash === `#${linkName}`
 
-const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
+const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value)
 </script>
 
 <template>

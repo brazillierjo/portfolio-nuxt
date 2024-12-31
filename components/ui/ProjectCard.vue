@@ -1,16 +1,19 @@
 <script setup lang="ts">
-import type { IProject } from "~/hooks/useTranslatedProjects";
+import type { IProject } from '~/hooks/useTranslatedProjects'
 
 defineProps({
   project: {
     type: Object as () => IProject,
     required: true,
   },
-});
+})
 </script>
 
 <template>
-  <div v-motion-slide-visible-once-bottom class="rounded-xl border border-tertiary p-6">
+  <div
+    v-motion-slide-visible-once-bottom
+    class="rounded-xl border border-tertiary p-6"
+  >
     <div>
       <h3 class="text-left text-lg font-semibold">{{ project.title }}</h3>
 

@@ -1,25 +1,33 @@
 <script setup lang="ts">
-import type { ITimelineItem } from "~/utils/types/timeline";
-import { useI18n } from "vue-i18n";
+import type { ITimelineItem } from '~/utils/types/timeline'
+import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n();
+const { t } = useI18n()
 
 defineProps({
   items: {
     type: Array as () => ITimelineItem[],
     required: true,
   },
-});
+})
 </script>
 
 <template>
   <div class="relative flex flex-col space-y-8">
-    <div v-for="(item, index) in items" :key="index" class="flex items-start" v-motion-slide-visible-once-bottom>
+    <div
+      v-for="(item, index) in items"
+      :key="index"
+      class="flex items-start"
+      v-motion-slide-visible-once-bottom
+    >
       <!-- Timeline Dot -->
       <div class="flex-shrink-0">
         <div class="relative z-10 h-4 w-4 rounded-full bg-primary" />
 
-        <div v-if="index < items.length - 1" class="absolute left-2 top-0 h-full w-0.5 bg-tertiary" />
+        <div
+          v-if="index < items.length - 1"
+          class="absolute left-2 top-0 h-full w-0.5 bg-tertiary"
+        />
       </div>
 
       <!-- Content -->
@@ -29,7 +37,8 @@ defineProps({
 
         <!-- Title and Company -->
         <h3 class="text-lg font-semibold">
-          {{ item.title }} <span class="text-primary">at {{ item.company }}</span>
+          {{ item.title }}
+          <span class="text-primary">at {{ item.company }}</span>
         </h3>
 
         <!-- Description -->
@@ -39,7 +48,9 @@ defineProps({
 
         <!-- Technologies -->
         <div v-if="item.technologies && item.technologies.length" class="mt-5">
-          <p class="text-sm font-semibold text-icons">{{ t("timeline.tags") }}:</p>
+          <p class="text-sm font-semibold text-icons">
+            {{ t('timeline.tags') }}:
+          </p>
 
           <ul class="mt-1 flex flex-wrap gap-2">
             <li

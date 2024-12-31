@@ -1,29 +1,34 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2024-11-01",
+  compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  css: ["~/assets/css/main.css"],
+  css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-  modules: ["@nuxtjs/i18n", "@nuxt/icon", "@vueuse/motion/nuxt", "@nuxtjs/google-fonts"],
+  modules: [
+    '@nuxtjs/i18n',
+    '@nuxt/icon',
+    '@vueuse/motion/nuxt',
+    '@nuxtjs/google-fonts',
+  ],
   i18n: {
     lazy: true,
-    langDir: "../locales/",
-    strategy: "prefix_and_default",
+    langDir: '../locales/',
+    strategy: 'prefix_and_default',
     locales: [
-      { code: "en", name: "English", iso: "en-US", file: "en.json" },
-      { code: "fr", name: "Français", iso: "fr-FR", file: "fr.json" },
+      { code: 'en', name: 'English', iso: 'en-US', file: 'en.json' },
+      { code: 'fr', name: 'Français', iso: 'fr-FR', file: 'fr.json' },
     ],
-    defaultLocale: "en",
+    defaultLocale: 'en',
   },
   googleFonts: {
     families: {
       Inter: [100, 200, 300, 400, 500, 600, 700, 800, 900],
     },
-    display: "swap",
+    display: 'swap',
   },
-});
+})

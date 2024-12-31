@@ -2,7 +2,7 @@
 defineProps({
   type: {
     type: String,
-    default: "button",
+    default: 'button',
   },
   onClick: {
     type: Function,
@@ -10,7 +10,7 @@ defineProps({
   classes: {
     type: String,
   },
-});
+})
 </script>
 
 <template>

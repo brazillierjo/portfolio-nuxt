@@ -1,16 +1,18 @@
 <script setup lang="ts">
-import { links } from "~/utils/links";
-import { useRoute } from "vue-router";
-import { useI18n } from "vue-i18n";
+import { links } from '~/utils/links'
+import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n();
-const route = useRoute();
+const { t } = useI18n()
+const route = useRoute()
 
-const isActive = (linkName: string) => route.hash === `#${linkName}`;
+const isActive = (linkName: string) => route.hash === `#${linkName}`
 </script>
 
 <template>
-  <div class="hidden xl:fixed xl:right-8 xl:top-1/2 xl:block xl:-translate-y-1/2">
+  <div
+    class="hidden xl:fixed xl:right-8 xl:top-1/2 xl:block xl:-translate-y-1/2"
+  >
     <nav
       class="flex w-fit min-w-[50px] flex-col items-center gap-5 rounded-full border border-tertiary bg-transparent py-6"
     >

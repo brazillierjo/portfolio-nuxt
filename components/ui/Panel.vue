@@ -4,19 +4,23 @@ defineProps({
     type: Boolean,
     required: true,
   },
-});
+})
 
-const emit = defineEmits(["close"]);
+const emit = defineEmits(['close'])
 
 const closePanel = () => {
-  emit("close");
-};
+  emit('close')
+}
 </script>
 
 <template>
   <div>
     <!-- Background Overlay -->
-    <div v-if="isOpen" class="fixed inset-0 z-30 bg-black/50 transition-opacity duration-300" @click="closePanel" />
+    <div
+      v-if="isOpen"
+      class="fixed inset-0 z-30 bg-black/50 transition-opacity duration-300"
+      @click="closePanel"
+    />
 
     <!-- Sliding Panel -->
     <Transition name="slide">
