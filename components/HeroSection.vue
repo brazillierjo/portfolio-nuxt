@@ -22,12 +22,15 @@ const introduceLink = links.find((link) => link.name === "Introduction");
     </div>
 
     <div class="flex flex-col lg:flex-row items-center gap-4">
-      <button
-        class="flex w-fit animate-pulse items-center gap-2 rounded-full border-2 border-primary px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:bg-primary hover:text-secondary"
-      >
-        Download my resume here
-        <Icon name="mdi:download" class="h-4 w-4" />
-      </button>
+      <a href="./CV.pdf"
+         download="CV-RINCON-BRAZILLIER-Johan.pdf">
+        <button
+          class="flex w-fit animate-pulse items-center gap-2 rounded-full border-2 border-primary px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:bg-primary hover:text-secondary"
+        >
+          Download my resume here
+          <Icon name="mdi:download" class="h-4 w-4" />
+        </button>
+      </a>
 
       <a
         href="#About"
