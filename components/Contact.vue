@@ -19,17 +19,17 @@ const introduceLink = links.find((link) => link.id === "contact");
       {{ t(introduceLink.name) }}
     </Tag>
 
-    <h1 class="text-2xl font-bold">Let's work <span class="text-primary">together</span> !</h1>
+    <h1 class="text-2xl font-bold">{{ t("contact.title1") }} <span class="text-primary">{{ t("contact.title2") }}</span> !</h1>
 
     <a class="text-xl text-text" :href="`mailto:${Contact.Email}`">{{ Contact.Email }}</a>
 
-    <p class="text-lg text-gray-600">Feel free to reach out to me via email for collaborations or inquiries.</p>
+    <p class="text-lg text-gray-600">{{ t("contact.phrase") }}</p>
 
     <a
       :href="`mailto:${Contact.Email}`"
       class="hover:bg-primary-light flex items-center gap-2 rounded-md bg-primary px-6 py-3 font-semibold text-secondary shadow-md transition duration-300"
     >
-      Contact me
+      {{ t("contact.contact_me") }}
       <Icon name="mdi:email-outline" class="h-5 w-5" />
     </a>
   </section>
