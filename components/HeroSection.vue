@@ -6,7 +6,7 @@ const introduceLink = links.find((link) => link.name === "Introduction");
 </script>
 
 <template>
-  <section id="Introduction" class="flex flex-col gap-6 xl:-mt-6 xl:h-screen xl:justify-center xl:gap-12">
+  <section id="Introduction" class="flex flex-col gap-6 xl:-mt-6 xl:min-h-screen xl:justify-center xl:gap-12">
     <Tag>
       <Icon :name="introduceLink?.icon ?? ''" class="h-4 w-4" />
       {{ introduceLink?.name }}
