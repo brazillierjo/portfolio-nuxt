@@ -60,10 +60,10 @@ const introduceLink = links.find((link) => link.id === "introduction");
         :href="stack.link"
         target="_blank"
         class="group flex flex-col items-center transition-all duration-300"
-        :style="{ animationDelay: `${index * 0.1}s` }"
       >
         <div
           class="stack-icon flex items-center justify-center rounded-full border-4 border-transparent bg-white p-3 transition-all duration-300 group-hover:border-primary"
+          :style="{ animationDelay: `${index * 0.1}s` }"
         >
           <img :src="stack.icon" :alt="stack.name" class="h-8 w-8" />
         </div>
