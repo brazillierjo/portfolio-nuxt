@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { links } from "~/utils/links";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+
+const isActive = (linkName: string) => route.hash === `#${linkName}`;
 </script>
 
 <template>
@@ -11,16 +16,13 @@ import { links } from "~/utils/links";
         <a :href="`#${link.name}`" class="p-2">
           <Icon
             :name="link.icon"
-            class="mx-auto h-5 w-5 text-icons transition-all duration-150 hover:text-primary"
+            :class="[
+              'mx-auto h-5 w-5 text-icons transition-all duration-150 hover:text-primary',
+              isActive(link.name) ? 'text-primary' : '',
+            ]"
             size="24"
           />
         </a>
-
-        <div
-          class="absolute right-10 top-0 z-10 mb-3 hidden w-max items-center justify-center rounded-xl bg-white/80 px-3 py-1 text-sm text-gray-900 shadow-lg backdrop-blur-md transition-opacity duration-300 group-hover:flex"
-        >
-          {{ link.name }}
-        </div>
       </div>
     </nav>
   </div>

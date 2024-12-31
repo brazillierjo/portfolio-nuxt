@@ -19,8 +19,7 @@ const introduceLink = links.find((link) => link.name === "Introduction");
       <p>I'm Johan, a Software Engineer passionate about crafting user-friendly web apps. Check out my work below!</p>
     </div>
 
-    <div class="flex gap-4 items-center">
-
+    <div class="flex items-center gap-4">
       <button
         class="flex w-fit animate-pulse items-center gap-2 rounded-full border-2 border-primary px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:scale-105"
       >

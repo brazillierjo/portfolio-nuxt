@@ -2,8 +2,12 @@
 import { ref } from "vue";
 import Panel from "~/components/ui/Panel.vue";
 import { links } from "~/utils/links";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
 
 const isMenuOpen = ref(false);
+const isActive = (linkName: string) => route.hash === `#${linkName}`;
 
 const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
 </script>
@@ -32,8 +36,20 @@ const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
           class="group flex items-center gap-4 text-lg transition-colors duration-150"
           @click="toggleMenu"
         >
-          <Icon :name="link.icon" class="h-5 w-5 text-icons transition-colors duration-150 group-hover:text-primary" />
-          <span class="text-sm text-tertiary transition-colors duration-150 group-hover:text-white">
+          <Icon
+            :name="link.icon"
+            :class="[
+              'h-5 w-5 text-icons transition-colors duration-150 group-hover:text-primary',
+              isActive(link.name) ? 'text-primary' : '',
+            ]"
+          />
+
+          <span
+            :class="[
+              'text-sm text-tertiary transition-colors duration-150 group-hover:text-white',
+              isActive(link.name) ? 'text-white' : '',
+            ]"
+          >
             {{ link.name }}
           </span>
         </a>
