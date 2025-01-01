@@ -1,0 +1,181 @@
+{
+  "links": {
+    "introduction": "イントロダクション",
+    "about": "私について",
+    "experiences": "経験",
+    "educations": "学歴",
+    "projects": "プロジェクト",
+    "contact": "連絡先"
+  },
+  "timeline": {
+    "tags": "技術"
+  },
+  "profileCard": {
+    "developer": "開発者。",
+    "based_in": "フランスのアンヌシーに拠点を置く 🇫🇷",
+    "hire_me": "雇ってください！"
+  },
+  "heroSection": {
+    "line1": "こんにちは！",
+    "line2": "私の名前はヨハンです。ウェブアプリケーションの開発に情熱を持つ開発者です。以下のプロジェクトをご覧ください！",
+    "resume": "こちらから履歴書をダウンロード",
+    "about_me": "私について",
+    "years_of": "年",
+    "experience": "の経験"
+  },
+  "aboutMe": {
+    "title1": "私の",
+    "title2": "経歴",
+    "phrase1": "📚 技術バカロレアを取得後、一度は学業を中断しました。様々なアルバイトをする中で、自分にもっと挑戦が必要だと感じ、21歳でEコマースの学士課程を再開しました。",
+    "phrase2": "🏋️ この学業を通じて、6年間SEOとして働きました。この経験から、プロフェッショナルな世界の仕組み、チームワーク、責任感、バックオフィス管理、自然検索エンジン最適化（SEO）について学びました。",
+    "phrase3": "🍀 SEOとして開発者と密接に協力する中で、この技術的な世界に足を踏み入れたいという思いが強くなり、6か月間のブートキャンプでウェブプログラミングとコードの書き方の基礎を学びました。その後、ReactとNodeJsを専門とするウェブ・モバイルアプリケーション開発の学士課程を通じて学びを続けました。",
+    "phrase4": "🍾 それ以来、私は多くの企業で完全な統合やプロジェクトの期限内配信、変更の実装、新機能の追加などを行ってきました。",
+    "phrase5": "👷 現在、私はアジャイル手法、クリーンコードの原則、CI/CDパイプラインの仕組みに精通しており、スケーラブルで保守性の高いウェブアプリケーションの開発を実現しています。SEOからプログラミングまでの多様な経験により、各プロジェクトにユニークな視点を提供できます。",
+    "phrase6": "🧘‍♂️ 2020年からウェブ開発者として活動しており、NuxtやNextJsを使用したアジャイル環境での開発を特に楽しんでいます。クリーンコードの原則を遵守し、CI/CDパイプラインを統合しています。あらゆるスタイルのモックアップをダイナミックでインタラクティブなウェブサイトに変えることで、ユーザー体験を向上させることが大好きです。",
+    "go_to_my_experiences": "私の経験"
+  },
+  "experiences": {
+    "title": "私の経験",
+    "go_to_educations": "私の学歴",
+    "items": [
+      {
+        "company": "Winter Energies",
+        "title": "ソフトウェアエンジニア",
+        "years": "2024 - (現在)",
+        "description": "Winter Energiesのフロントエンド開発者として、Next.js、TailwindCSS、TypeScriptを使用して、モダンでパフォーマンスの高いユーザーインターフェースを設計し、持続可能なエネルギー消費を促進するスケーラブルで信頼性の高いソリューションを提供しています。"
+      },
+      {
+        "company": "La Boîte Immo",
+        "title": "ソフトウェアエンジニア",
+        "years": "2022 - 2024",
+        "description": "独立系不動産エージェントを支援するため、不動産管理用の複数のウェブアプリケーションを開発しました。"
+      },
+      {
+        "company": "フリーランス",
+        "title": "フリーランス開発者",
+        "years": "2022 (現在)",
+        "description": "顧客の特定のニーズに対応するためのカスタムソリューションを提供し、高品質の開発スキルを活用しています。"
+      },
+      {
+        "company": "GetUp Agency",
+        "title": "フロントエンド開発者",
+        "years": "2022",
+        "description": "魅力的で使いやすいユーザーインターフェースをクライアント向けに作成し、オンラインプレゼンスの目標を達成する手助けをしました。"
+      },
+      {
+        "company": "Vitassurance",
+        "title": "フロントエンド＆バックエンド開発者",
+        "years": "2021",
+        "description": "保険ブローカーのウェブサイトで、訪問者が異なる保険会社のオファーを迅速に比較できるようにします。フォームを記入後、APIを介して情報がCRMに送信され、新規顧客の管理が可能になります。"
+      },
+      {
+        "company": "poupepoupi.com",
+        "title": "ウェブアナリスト (6年)",
+        "years": "2014 - 2020",
+        "description": "ウェブサイトのパフォーマンスを最大化し、データに基づく戦略を活用して事業成長を促進するインサイトと最適化を提供しました。"
+      },
+      {
+        "company": "大手チェーンストア | ガーデンセンター | プロモーション",
+        "title": "さまざまな分野での多様な職務",
+        "years": "2011 - 2014",
+        "description": "多様な役割を通じて、多面的なスキルと貴重な経験を獲得しました。"
+      }
+    ]
+  },
+  "educations": {
+    "title": "私の学歴",
+    "go_to_projects": "私のプロジェクト",
+    "items": [
+      {
+        "company": "3WAcademy",
+        "title": "(BAC+3) Web＆モバイルアプリケーション開発者ライセンス",
+        "years": "2020 - 2021",
+        "description": ""
+      },
+      {
+        "company": "OpenClassrooms",
+        "title": "ウェブ開発者 - レベル5 RNCP認定資格",
+        "years": "2020",
+        "description": ""
+      },
+      {
+        "company": "トゥーロン大学",
+        "title": "(BAC+3) Eコマース＆デジタルマーケティング学士",
+        "years": "2016 - 2017",
+        "description": ""
+      },
+      {
+        "company": "Défi83 - トゥーロン",
+        "title": "(BAC+2) 商業単位管理 BTS",
+        "years": "2014 - 2016",
+        "description": ""
+      },
+      {
+        "company": "ジャン・エカルド - イエール",
+        "title": "経営科学と技術バカロレア",
+        "years": "2010 - 2012",
+        "description": ""
+      }
+    ]
+  },
+  "projects": {
+    "title": "私のプロジェクト",
+    "go_to_contact": "私に連絡する",
+    "items": [
+      {
+        "title": "Walletoo - 個人財務管理アシスタント",
+        "description": "Walletooは個人財務管理アシスタントです。簡単に財務を管理できます。収入と月次支出を入力するだけで、Walletooが残りの生活費を計算し、貯蓄の提案やグラフを提供します。",
+        "appUrl": "",
+        "codeUrl": "https://github.com/brazillierjo/wallet",
+        "technologies": [
+          "React",
+          "Next.js",
+          "Bun",
+          "TypeScript",
+          "Elysia",
+          "PostgreSQL",
+          "Docker",
+          "TailwindCSS",
+          "Prisma"
+        ]
+      },
+      {
+        "title": "筋トレセッションジェネレーター [モバイルフレンドリー]",
+        "description": "ma-sante.frは筋トレセッションのジェネレーター💪です。このウェブアプリは常に異なるエクササイズでセッションを生成し、結果を最適化します。アニメーションGIFが添付されており、エクササイズを簡単に再現できます。",
+        "appUrl": "https://ma-seance.vercel.app/",
+        "codeUrl": "https://github.com/brazillierjo/ma-seance",
+        "technologies": ["React", "TailwindCSS"]
+      },
+      {
+        "title": "ピアノ",
+        "description": "鍵盤の音の録音からデザインまで、このプロジェクトではイベントとパフォーマンスの管理を学びました。また、ピアノを購入することなく何時間も楽しむことができます🤓",
+        "appUrl": "https://brazillierjo.github.io/piano/",
+        "codeUrl": "https://github.com/brazillierjo/piano",
+        "technologies": ["JavaScript", "CSS", "HTML"]
+      },
+      {
+        "title": "ウェブ電卓",
+        "description": "JavaScript Vanillaの知識を深めるために作成されたプロジェクトです。基本計算または高度な計算を選択できます。ライト/ナイトモードの学習も行いました。",
+        "appUrl": "https://brazillierjo.github.io/calculator/",
+        "codeUrl": "https://github.com/brazillierjo/calculator",
+        "technologies": ["JavaScript", "CSS", "HTML"]
+      },
+      {
+        "title": "Markdown プレビューア",
+        "description": "Reactのトレーニングのために作成されたMarkdownです。GitHub Pagesにデプロイされています。",
+        "appUrl": "https://brazillierjo.github.io/markdown/",
+        "codeUrl": "https://github.com/brazillierjo/markdown",
+        "technologies": ["React", "TailwindCSS", "Vite"]
+      }
+    ]
+  },
+  "contact": {
+    "title1": "一緒に働きましょう",
+    "title2": "",
+    "phrase": "一緒に働きたい場合はご連絡ください！",
+    "contact_me": "連絡する"
+  },
+  "footer": {
+    "built_with": "NuxtとTailwindCSSで作成 ❤️"
+  }
+}

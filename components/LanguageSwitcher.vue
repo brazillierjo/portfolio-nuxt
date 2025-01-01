@@ -13,9 +13,9 @@ const currentLocaleName = computed(() => {
 </script>
 
 <template>
-  <div class="absolute top-6 xl:top-12 xl:left-10 left-5 w-fit">
+  <div class="absolute left-5 top-6 w-fit xl:left-10 xl:top-12">
     <div
-      class="relative w-full pr-8 cursor-pointer rounded-full bg-tertiary px-3 py-1.5 text-sm font-medium text-text transition"
+      class="relative w-full cursor-pointer rounded-full bg-tertiary px-3 py-1.5 pr-8 text-sm font-medium text-text transition"
     >
       {{ currentLocaleName }}
 
