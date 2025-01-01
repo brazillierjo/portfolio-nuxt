@@ -1,58 +1,43 @@
-<script setup lang="ts">
+<script setup>
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { useRouter } from 'vue-router'
 
-const { locale } = useI18n()
-const router = useRouter()
+const { locale, locales, setLocale } = useI18n()
 
-const currentLang = locale.value
+const availableLocales = computed(() => locales.value)
 
-const toggleLanguage = () => {
-  const newLang = currentLang === 'en' ? 'fr' : 'en'
-  locale.value = newLang
-
-  router.push({ path: `/${newLang}` })
-}
+const currentLocaleName = computed(() => {
+  const currentLocale = locales.value.find(l => l.code === locale.value)
+  return currentLocale ? currentLocale.name : ''
+})
 </script>
 
 <template>
-  <div class="absolute left-5 top-7 flex items-center gap-4 xl:top-5">
-    <div class="flex gap-3">
-      <span
-        class="text-sm font-semibold transition-colors duration-300"
-        :class="{
-          'text-text': currentLang === 'en',
-          'text-icons': currentLang !== 'en',
-        }"
-      >
-        EN
-      </span>
-    </div>
-
+  <div class="absolute top-6 xl:top-12 xl:left-10 left-5 w-fit">
     <div
-      class="relative flex h-6 w-[52px] cursor-pointer items-center rounded-full bg-tertiary px-1.5 shadow-inner"
-      @click="toggleLanguage"
+      class="relative w-full pr-8 cursor-pointer rounded-full bg-tertiary px-3 py-1.5 text-sm font-medium text-text transition"
     >
-      <div
-        class="absolute h-5 w-5 rounded-full bg-primary shadow-md transition-transform duration-300"
-        :class="{
-          'translate-x-5': currentLang === 'fr',
-          'translate-x-0': currentLang === 'en',
-        }"
-        aria-label="Toggle Language"
+      {{ currentLocaleName }}
+
+      <Icon
+        name="mdi:chevron-down"
+        class="absolute right-3 top-1/2 -translate-y-1/2"
+        size="20"
       />
     </div>
 
-    <div class="flex gap-3">
-      <span
-        class="text-sm font-semibold transition-colors duration-300"
-        :class="{
-          'text-text': currentLang === 'fr',
-          'text-icons': currentLang !== 'fr',
-        }"
+    <select
+      class="absolute inset-0 h-full w-full cursor-pointer appearance-none opacity-0"
+      :value="locale.value"
+      @change="setLocale($event.target.value)"
+    >
+      <option
+        v-for="locale in availableLocales"
+        :key="locale.code"
+        :value="locale.code"
       >
-        FR
-      </span>
-    </div>
+        {{ locale.name }}
+      </option>
+    </select>
   </div>
 </template>

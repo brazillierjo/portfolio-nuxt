@@ -1,0 +1,181 @@
+{
+  "links": {
+    "introduction": "Introduction",
+    "about": "À propos",
+    "experiences": "Expériences",
+    "educations": "Educations",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "timeline": {
+    "tags": "Technologies"
+  },
+  "profileCard": {
+    "developer": "Développeur.",
+    "based_in": "Basé à Annecy, France 🇫🇷",
+    "hire_me": "EMBAUCHEZ-MOI !"
+  },
+  "heroSection": {
+    "line1": "Bonjour!",
+    "line2": "Je m'appelle Johan, je suis un développeur passionné par la création d'applications web. Regardez mes projets ci-dessous !",
+    "resume": "Télécharger mon CV ici",
+    "about_me": "À propos de moi",
+    "years_of": "Années",
+    "experience": "d'expérience"
+  },
+  "aboutMe": {
+    "title1": "mon",
+    "title2": "parcours",
+    "phrase1": "📚 J'ai d'abord arrêté les études après un Baccalauréat Technologique. De petits boulots en petits boulots, j'ai rapidement compris que ce contexte ne me suffirait pas. J'ai donc repris mes études à 21 ans pour une licence en e-commerce.",
+    "phrase2": "🏋️ Ces études m'ont permis d'exercer pendant 6 ans en tant que SEO. Cette expérience m'a appris le fonctionnement du monde professionnel, le travail en équipe ainsi que le poids des responsabilités mais également la gestion d'un back office et d'un référencement naturel.",
+    "phrase3": "🍀 En tant que SEO, travailler en étroite collaboration avec des développeurs m'a donné envie de me plonger dans ce monde très technique. Je me suis donc offert une formation bootcamp de 6 mois pour acquérir les bases de la programmation web et de l'écriture de code. Suite à cela, j'ai poursuivi mon apprentissage en alternance avec une Licence Intégrateur/Développeur d'Applications Web et mobile avec spécialité React et NodeJs.",
+    "phrase4": "🍾 Depuis, j'ai intégré pas mal d'entreprises pour des intégrations complètes, des coups de mains pour livrer un projet à temps, apporter des modifications, ajouter des fonctionnalités...",
+    "phrase5": "👷 Aujourd'hui, fort de mon parcours, je maîtrise les rouages de la méthode Agile, les principes du Clean Code, et les pipelines CI/CD, assurant ainsi la scalabilité et la maintenabilité optimales de chaque application web que je développe. Mon expérience variée, du SEO à la programmation, me permet d'apporter une perspective unique à chaque projet.",
+    "phrase6": "🧘‍♂️ Développeur Web depuis 2020, j'apprécie particulièrement travailler avec Nuxt & NextJs dans un environnement Agile, en suivant les principes du clean code et en intégrant des pipelines CI/CD. J'adore transformer des maquettes de tout style en sites web dynamiques et interactifs pour améliorer l'expérience utilisateur.",
+    "go_to_my_experiences": "Mes expériences"
+  },
+  "experiences": {
+    "title": "mes expériences",
+    "go_to_educations": "Mes formations",
+    "items": [
+      {
+        "company": "Winter Energies",
+        "title": "Ingénieur logiciel",
+        "years": "2024 - (en cours)",
+        "description": "En tant que développeur frontend chez Winter Energies, je conçois des interfaces utilisateur modernes et performantes avec Next.js, TailwindCSS et TypeScript, contribuant à une consommation énergétique durable en fournissant des solutions évolutives et fiables."
+      },
+      {
+        "company": "La Boîte Immo",
+        "title": "Ingénieur logiciel",
+        "years": "2022 - 2024",
+        "description": "Développement de plusieurs applications web pour la gestion de biens immobiliers pour aider les agents immobiliers indépendants."
+      },
+      {
+        "company": "Free-lance",
+        "title": "Développeur freelance",
+        "years": "2022 (en cours)",
+        "description": "Mise en place de solutions sur mesure aux clients, en veillant à ce que leurs besoins uniques soient satisfaits avec une expertise de développement de haute qualité."
+      },
+      {
+        "company": "GetUp Agency",
+        "title": "Développeur Front-End",
+        "years": "2022",
+        "description": "Créer des interfaces utilisateur attractives et conviviales pour les clients, les aidant à atteindre leurs objectifs de présence en ligne."
+      },
+      {
+        "company": "Vitassurance",
+        "title": "Développeur Front-end & Back-end",
+        "years": "2021",
+        "description": "Un site web de courtage en assurance qui vous permet de comparer rapidement les offres de différents assureurs. Une fois que le visiteur remplit le formulaire, ses informations sont envoyées via une API à un CRM pour gérer le dossier du nouveau client."
+      },
+      {
+        "company": "poupepoupi.com",
+        "title": "Analyste Web (6 ans)",
+        "years": "2014 - 2020",
+        "description": "Fournir des insights et des optimisations pour maximiser les performances du site web et stimuler la croissance de l'entreprise grâce à des stratégies basées sur les données."
+      },
+      {
+        "company": "Grandes chaînes de magasins | Jardineries | Animation",
+        "title": "Divers emplois dans différents domaines",
+        "years": "2011 - 2014",
+        "description": "Acquisition de compétences polyvalentes et d'une expérience précieuse en travaillant dans divers rôles à travers plusieurs industries."
+      }
+    ]
+  },
+  "educations": {
+    "title": "mes formations",
+    "go_to_projects": "Mes projets",
+    "items": [
+      {
+        "company": "3WAcademy",
+        "title": "Diplôme Fédéral d'Intégrateur/Développeur Web et Mobile (Bachelor)",
+        "years": "2020 - 2021",
+        "description": ""
+      },
+      {
+        "company": "OpenClassrooms",
+        "title": "Développeur Web - Certificat de Compétences",
+        "years": "2020",
+        "description": ""
+      },
+      {
+        "company": "Université de Toulon",
+        "title": "Bachelor en E-commerce & Marketing Numérique",
+        "years": "2016 - 2017",
+        "description": ""
+      },
+      {
+        "company": "Défi83 - Toulon",
+        "title": "Diplôme d’Études Supérieures en Gestion Commerciale (DégC)",
+        "years": "2014 - 2016",
+        "description": ""
+      },
+      {
+        "company": "Jean Aicard - Hyères",
+        "title": "Maturité Professionnelle Commerciale",
+        "years": "2010 - 2012",
+        "description": ""
+      }
+    ]
+  },
+  "projects": {
+    "title": "mes projets",
+    "go_to_contact": "Contactez-moi",
+    "items": [
+      {
+        "title": "Walletoo - L'assistant de gestion de finances personnelles",
+        "description": "Walletoo est un assistant de gestion de finances personnelles. Il permet de gérer ses finances en toute simplicité. Il suffit de se connecter et d'entrer ses revenus et ses charges mensuelles. Walletoo se charge de calculer le reste à vivre et de vous proposer des solutions d'épargne, des graphiques etc.",
+        "appUrl": "",
+        "codeUrl": "https://github.com/brazillierjo/wallet",
+        "technologies": [
+          "React",
+          "Next.js",
+          "Bun",
+          "TypeScript",
+          "Elysia",
+          "PostgreSQL",
+          "Docker",
+          "TailwindCSS",
+          "Prisma"
+        ]
+      },
+      {
+        "title": "Générateur de séance de musculation [mobile-friendly only]",
+        "description": "ma-sante.fr est un générateur de séance de musculation 💪. Cette web app se charge de générer des séances avec des exercices toujours différents afin d'optimiser les résultats. Accompagné d'un GIF animé, les exercices sont faciles à reproduire.",
+        "appUrl": "https://ma-seance.vercel.app/",
+        "codeUrl": "https://github.com/brazillierjo/ma-seance",
+        "technologies": ["React", "TailwindCSS"]
+      },
+      {
+        "title": "Piano",
+        "description": "De l'enregistrement du son des clés jusqu'au design, ce projet m'a appris à gérer les évènements et les performances ! En plus, on peut y passer des heures sans avoir besoin d'en acheter un 🤓",
+        "appUrl": "https://brazillierjo.github.io/piano/",
+        "codeUrl": "https://github.com/brazillierjo/piano",
+        "technologies": ["JavaScript", "CSS", "HTML"]
+      },
+      {
+        "title": "Web Calculator",
+        "description": "Projet réalisé dans le but d'approfondir mes connaissances JavaScript Vanilla. Vous pouvez choisir entre des calculs de base ou des calculs avancés. Apprentissage du light/night mode.",
+        "appUrl": "https://brazillierjo.github.io/calculator/",
+        "codeUrl": "https://github.com/brazillierjo/calculator",
+        "technologies": ["JavaScript", "CSS", "HTML"]
+      },
+      {
+        "title": "Markdown Previewer",
+        "description": "Markdown réalisé dans le but d'une formation React. Déployé sur GitHub Pages.",
+        "appUrl": "https://brazillierjo.github.io/markdown/",
+        "codeUrl": "https://github.com/brazillierjo/markdown",
+        "technologies": ["React", "TailwindCSS", "Vite"]
+      }
+    ]
+  },
+  "contact": {
+    "title1": "Travaillons",
+    "title2": "ensemble",
+    "phrase": "Contactez-moi si vous souhaitez travailler ensemble !",
+    "contact_me": "Contactez-moi"
+  },
+  "footer": {
+    "built_with": "Construit avec Nuxt et TailwindCSS avec ❤️"
+  }
+}
