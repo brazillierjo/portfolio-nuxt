@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         iso: 'fr-CH',
         file: 'fr-CH.json',
       },
-      { code: 'ja-JP', name: '日本語', iso: 'ja-JP', file: 'ja-JP.json' },
+      { code: 'ja-JP', name: '日本語 🇯🇵', iso: 'ja-JP', file: 'ja-JP.json' },
     ],
     defaultLocale: 'en-US',
   },

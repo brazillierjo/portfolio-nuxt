@@ -5,6 +5,22 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
 const introduceLink = links.find(link => link.id === 'introduction')
+
+const { locale } = useI18n()
+
+const getCVFilename = (locale: string) => {
+  const baseName = 'CV-RINCON_BRAZILLIER_Johan'
+
+  const cvMap: Record<string, string> = {
+    'fr-CH': `${baseName}-ch.pdf`,
+    'fr-FR': `${baseName}-fr.pdf`,
+    'en-US': `${baseName}-en.pdf`,
+  }
+
+  return cvMap[locale] || `${baseName}-en.pdf`
+}
+
+const cvFilename = getCVFilename(locale.value)
 </script>
 
 <template>
@@ -30,7 +46,7 @@ const introduceLink = links.find(link => link.id === 'introduction')
     </div>
 
     <div class="flex flex-col items-center gap-4 lg:flex-row">
-      <a href="./CV.pdf" download="CV-RINCON-BRAZILLIER-Johan.pdf">
+      <a :href="`./${cvFilename}`" download="CV-RINCON-BRAZILLIER-Johan.pdf">
         <button
           class="flex w-fit animate-pulse items-center gap-2 rounded-full border-2 border-primary px-4 py-2 text-sm uppercase text-text transition-all duration-300 hover:bg-primary hover:text-secondary"
         >
