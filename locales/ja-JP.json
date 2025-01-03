@@ -123,6 +123,13 @@
     "go_to_contact": "私に連絡する",
     "items": [
       {
+        "title": "履歴書ジェネレーター",
+        "description": "NuxtとPuppeteerで作成したこのプロジェクトは、PDF形式で履歴書を生成することができます。ソースコードはGitHubで公開しています。",
+        "appUrl": "https://cv-generator-dun-beta.vercel.app/",
+        "codeUrl": "https://github.com/brazillierjo/cv-generator",
+        "technologies": ["Nuxt", "TailwindCSS", "Puppeteer"]
+      },
+      {
         "title": "Walletoo - 個人財務管理アシスタント",
         "description": "Walletooは個人財務管理アシスタントです。簡単に財務を管理できます。収入と月次支出を入力するだけで、Walletooが残りの生活費を計算し、貯蓄の提案やグラフを提供します。",
         "appUrl": "",

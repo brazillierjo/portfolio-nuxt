@@ -123,6 +123,13 @@
     "go_to_contact": "Contactez-moi",
     "items": [
       {
+        "title": "Générateur de CV",
+        "description": "Réalisé avec Nuxt et Puppeteer, ce projet me permet de me générer un CV en PDF. Le code source est disponible sur GitHub.",
+        "appUrl": "https://cv-generator-dun-beta.vercel.app/",
+        "codeUrl": "https://github.com/brazillierjo/cv-generator",
+        "technologies": ["Nuxt", "TailwindCSS", "Puppeteer"]
+      },
+      {
         "title": "Walletoo - L'assistant de gestion de finances personnelles",
         "description": "Walletoo est un assistant de gestion de finances personnelles. Il permet de gérer ses finances en toute simplicité. Il suffit de se connecter et d'entrer ses revenus et ses charges mensuelles. Walletoo se charge de calculer le reste à vivre et de vous proposer des solutions d'épargne, des graphiques etc.",
         "appUrl": "",
